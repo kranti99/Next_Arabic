@@ -25,6 +25,9 @@ ul.menu {
   border-radius: 10px;
   margin-bottom: 5px;
 }
+.tech-part-slider-box img {
+  max-width: 200px;
+}
 @media (max-width: 768px) {
   ul.menu {
     flex-flow: column nowrap;

@@ -6,6 +6,7 @@ import React, {useState} from 'react'
 
 import Header from '../components/english/header'
 import Footer from '../components/english/footer'
+import Partner from '../components/english/slider/partner'
 
 export default function Home() {
   return (
@@ -55,20 +56,9 @@ export default function Home() {
                     <div class="description">
                         <p>POS integration for a full automated <br /> loyalty system</p>
                     </div>
-                </div>
+                </div> 
                 <div class="tech-part-slider-box sliderbox" id="tech-part-slider">
-                    <div class="tech-part-slider owl-carousel owl-theme">
-                        <div class="tech-part-slider-item"><a href="#" title=""><img src="img/googlelogo.png"
-                                    alt="" /></a></div>
-                        <div class="tech-part-slider-item"><a href="#" title=""><img src="img/slacklogo.png"
-                                    alt="" /></a></div>
-                        <div class="tech-part-slider-item"><a href="#" title=""><img src="img/microsoftlogo.png"
-                                    alt="" /></a></div>
-                        <div class="tech-part-slider-item"><a href="#" title=""><img src="img/facebooklogo.png"
-                                    alt="" /></a></div>
-                        <div class="tech-part-slider-item"><a href="#" title=""><img src="img/amazonlogo.png"
-                                    alt="" /></a></div>
-                    </div>
+                    <Partner />
                 </div>
             </div>
         </div>

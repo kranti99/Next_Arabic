@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head lang="en">
         <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
             <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            {/* <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> */}
             <meta name="noindex" content="nofollow" />
         </Head>
         <body>
