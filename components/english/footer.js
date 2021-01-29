@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 function Footer() {
     return (
         <footer>
@@ -16,11 +18,11 @@ function Footer() {
                       </div>
                       <div class="footer-menu">
                           <ul>
-                              <li><a href="#" title="title">Home</a></li>
+                              <li><Link href="/"><a>Home</a></Link></li>
                               <li><a href="#" title="title">Loyalty Program</a></li>
                               <li><a href="#" title="title">Partners</a></li>
-                              <li><a href="#" title="title">FAQ's</a></li>
-                              <li><a href="#" title="title">Contact us</a></li>
+                              <li><Link href="../../faq"><a>FAQ's</a></Link></li>
+                              <li><Link href="../../contact_us"><a>Contact Us</a></Link></li>
                           </ul>
                       </div>
                       <div class="footer-social-icon">
