@@ -7,6 +7,7 @@ import React, {useState} from 'react'
 import Header from '../components/english/header'
 import Footer from '../components/english/footer'
 import Partner from '../components/english/slider/partner'
+import Testimonials from '../components/english/slider/testimonials'
 
 export default function Home() {
   return (
@@ -352,72 +353,7 @@ export default function Home() {
             </div>
             <div class="testimonial-section-main">
                 <div class="testimonial-item-slider-box sliderbox" id="testimonial-slider">
-                    <div class="testimonial-slider owl-carousel owl-theme">
-                        <div class="testimonial-item">
-                            <div class="testimonial-desription">
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                                    زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
-                            </div>
-                            <div class="testimonial-person">
-                                <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
-                                <div class="test-text-box">
-                                    <div class="test-title">
-                                        <h6>محمد بن خالد الاميري</h6>
-                                    </div>
-                                    <div class="test-span"><span>Breath Coffee</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-desription">
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                                    زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
-                            </div>
-                            <div class="testimonial-person">
-                                <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
-                                <div class="test-text-box">
-                                    <div class="test-title">
-                                        <h6>محمد بن خالد الاميري</h6>
-                                    </div>
-                                    <div class="test-span"><span>Breath Coffee</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-desription">
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                                    زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
-                            </div>
-                            <div class="testimonial-person">
-                                <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
-                                <div class="test-text-box">
-                                    <div class="test-title">
-                                        <h6>محمد بن خالد الاميري</h6>
-                                    </div>
-                                    <div class="test-span"><span>Breath Coffee</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-desription">
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                                    زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
-                            </div>
-                            <div class="testimonial-person">
-                                <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
-                                <div class="test-text-box">
-                                    <div class="test-title">
-                                        <h6>محمد بن خالد الاميري</h6>
-                                    </div>
-                                    <div class="test-span"><span>Breath Coffee</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <Testimonials />   
                 </div>
             </div>
             <div class="testimonial-section-info">

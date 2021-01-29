@@ -3,12 +3,40 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
 export default (props) => {
-  const [sliderRef] = useKeenSlider({
-    slidesPerView: 3,
-    mode: "free",
-    spacing: 15,
+  const [pause, setPause] = React.useState(false)
+  const timer = React.useRef()
+  const [sliderRef, slider] = useKeenSlider({
     loop: true,
+    duration: 1000,
+    slidesPerView: 3,
+    spacing: 15,
+    dragStart: () => {
+      setPause(true)
+    },
+    dragEnd: () => {
+      setPause(false)
+    },
   })
+
+  React.useEffect(() => {
+    sliderRef.current.addEventListener("mouseover", () => {
+      setPause(true)
+    })
+    sliderRef.current.addEventListener("mouseout", () => {
+      setPause(false)
+    })
+  }, [sliderRef])
+
+  React.useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next()
+      }
+    }, 2000)
+    return () => {
+      clearInterval(timer.current)
+    }
+  }, [pause, slider])
 
   return (
     <div ref={sliderRef} className="keen-slider">
