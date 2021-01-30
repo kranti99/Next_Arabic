@@ -19,7 +19,7 @@ function contact_us() {
                             </div>
                         </div>
                         <div class="whychooseus-item-box">
-                         <Accordion />
+                         {/* <Accordion /> */}
 
                         </div>
                     </div>
