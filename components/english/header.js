@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import callToAction from './popup'
+import Popup from './popup'
 
 function Header() {
     return (<div> 
 {/* <!-- HEADER SECTION STARTS--> */}
-
     <section class="header-section">
         <div class="container">
             <div class="header-box">
@@ -26,8 +25,10 @@ function Header() {
                     </div>
                 </div>
                 <div class="header-demo-box">
-                    <div class="header-demo"><a class="btn small orange" href="#" title="Request a Demo">Request a
-                            Demo</a></div>
+                    <div class="header-demo">
+                        <Popup />
+                    </div>
+
                     <div class="header-lang">
                         <ul>
                             <li><a href="#" title="title"><span class="imgicon messagebox"></span><span

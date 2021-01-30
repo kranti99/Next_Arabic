@@ -8,7 +8,7 @@ export default (props) => {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     duration: 1000,
-    slidesPerView: 3,
+    slidesPerView: 4,
     spacing: 15,
     dragStart: () => {
       setPause(true)
