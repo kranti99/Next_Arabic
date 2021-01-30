@@ -1,6 +1,6 @@
 import Header from '../components/english/header'
 import Footer from '../components/english/footer'
-import Accordion from '../components/english/accordion/Accordion'
+import Accordion from '../components/english/accordion/accordion'
 
 function contact_us() {
     return <div>
