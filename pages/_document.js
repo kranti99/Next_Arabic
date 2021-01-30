@@ -18,6 +18,8 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="/app.js" crossorigin="anonymous"></script>
+
         </body>
       </Html>
     )
