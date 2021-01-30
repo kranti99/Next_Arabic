@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.555" height="725.556" viewBox="0 0 725.555 725.556">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Base" cx="362.778" cy="362.778" r="362.778" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Oval_pattern" data-name="Oval pattern" clip-path="url(#clip-path)">
+    <path id="Shape" d="M779.9,0H0" transform="translate(334.054 -133.363) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-2" data-name="Shape" d="M779.9,0H0" transform="translate(248.53 -47.84) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-3" data-name="Shape" d="M779.9,0H0" transform="translate(163.006 37.684) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-4" data-name="Shape" d="M779.9,0H0" transform="translate(77.483 123.208) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-5" data-name="Shape" d="M779.9,0H0" transform="translate(-8.041 208.732) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-6" data-name="Shape" d="M779.9,0H0" transform="translate(-93.565 293.249) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-7" data-name="Shape" d="M779.9,0H0" transform="translate(-178.082 378.773) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40"/>
+    <path id="Shape-8" data-name="Shape" d="M779.9,0H0" transform="translate(308.903 -72.991) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40" opacity="0.25"/>
+    <path id="Shape-9" data-name="Shape" d="M779.9,0H0" transform="translate(189.164 -21.682) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40" opacity="0.25"/>
+    <path id="Shape-10" data-name="Shape" d="M779.9,0H0" transform="translate(137.855 98.057) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40" opacity="0.25"/>
+    <path id="Shape-11" data-name="Shape" d="M779.9,0H0" transform="translate(19.123 149.366) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40" opacity="0.25"/>
+    <path id="Shape-12" data-name="Shape" d="M779.9,0H0" transform="translate(-32.186 269.104) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40" opacity="0.25"/>
+    <path id="Shape-13" data-name="Shape" d="M779.9,0H0" transform="translate(-151.925 320.413) rotate(45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="40 40" opacity="0.25"/>
+  </g>
+</svg>
