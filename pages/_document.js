@@ -11,14 +11,14 @@ class MyDocument extends Document {
       <Html>
         <Head lang="en">
         <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
-            <meta charset="UTF-8" />
+            <meta charSet="UTF-8" />
             {/* <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> */}
             <meta name="noindex" content="nofollow" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="/app.js" crossorigin="anonymous"></script>
+          <script src="/custom_app.js" crossorigin="anonymous"></script>
 
         </body>
       </Html>
