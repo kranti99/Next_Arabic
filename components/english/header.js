@@ -20,7 +20,7 @@ function Header() {
                             <li><Link href="/"><a title="home">Home</a></Link></li>
                             <li><a href="#" title="title">Loyalty Program</a></li>
                             <li><a href="#" title="title">Partners</a></li>
-                            <li><Link href="../../contact_us"><a title="contact us">Contact us</a></Link></li>
+                            <li><Link href="/contact_us"><a title="contact us">Contact us</a></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -51,8 +51,8 @@ function Header() {
                         <li><Link href="/"><a title="title">الرئيسية</a></Link></li>
                         <li><a href="#" title="title">نظام الولاء</a></li>
                         <li><a href="#" title="title">شركاؤنا</a></li>
-                        <li><Link href="../../faq"><a title="FAQ">الأسئلة الشائعة</a></Link></li>
-                        <li><Link href="../../contact_us"><a title="contact">تواصل معنا</a></Link></li>
+                        <li><Link href="/faq"><a title="FAQ">الأسئلة الشائعة</a></Link></li>
+                        <li><Link href="/contact_us"><a title="contact">تواصل معنا</a></Link></li>
                     </ul>
                 </div>
                 <div class="mobile-menu-lang">

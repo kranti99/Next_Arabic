@@ -9,6 +9,7 @@ import Footer from '../components/english/footer'
 import Partner from '../components/english/slider/partner'
 import Testimonials from '../components/english/slider/testimonials'
 
+
 export default function Home() {
   return (
 
@@ -202,25 +203,30 @@ export default function Home() {
                             <p class="colwhite">Smart solutions to help you make data-driven business decisions</p>
                         </div>
                     </div>
+                    
                     <div class="feature-main-item-holder">
-                        <div class="feature-main-item-img"><img src="img/feat-main-item-img.png" alt="" /></div>
-                        <div class="feature-main-item-box">
-                            <div class="feature-main-item">
+                        <div class="feature-main-item-img  fade-in">
+                           <img src="img/feat-main-item-img.png" alt="" id="TextHoverImage"/>
+                        </div>
+                        <div class="feature-main-item-box fade-in">
+                            <div class="feature-main-item feature-main-item1">
                                 <div class="title">
                                     <h5>لوحة تحكم سهلة الاستخدام</h5>
                                 </div>
-                                <div class="description">
-                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                        النص العربى</p>
-                                </div>
                             </div>
-                            <div class="feature-main-item">
+                            <div class="feature-main-item feature-main-item2">
                                 <div class="title">
                                     <h5>تحليل بيانات دقيقة</h5>
                                 </div>
-                                <div class="description">
-                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                        النص العربى</p>
+                            </div>
+                            <div class="feature-main-item feature-main-item3">
+                                <div class="title">
+                                    <h5>تحليل بيانات دقيقة</h5>
+                                </div>
+                            </div>
+                            <div class="feature-main-item feature-main-item4" >
+                                <div class="title">
+                                    <h5>تحليل بيانات دقيقة</h5>
                                 </div>
                             </div>
                         </div>

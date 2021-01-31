@@ -1,4 +1,4 @@
-/* to get image (/static/img/arrow.svg) */
+/* to get image (/img/arrow.svg) */
 
 .faq-item:hover {
   cursor: pointer;
@@ -19,7 +19,7 @@
   justify-content: center;
   width: 21px;
   height: 21px;
-  /* -webkit-mask: url(/static/img/arrow.svg) center center no-repeat;
+  /* -webkit-mask: url(/img/arrow.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #202331; */
 }
@@ -102,10 +102,64 @@
   border-radius: 0.3rem;
   outline: 0;
 }
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
+  }
+}
+
+/* fade in effect */
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -231,6 +285,10 @@ body {
   color: #7c8087;
   font-weight: 500;
   font-family: "DIN Next LT Arabic";
+}
+
+body.ar {
+  direction: rtl;
 }
 
 .site-holder {
@@ -697,7 +755,7 @@ h6,
   width: 8px;
   height: 8px;
   left: 2px;
-  background: url(/static/img/tick.svg) center center no-repeat;
+  background: url(/img/tick.svg) center center no-repeat;
   background-size: contain;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
@@ -834,7 +892,7 @@ label {
   border: none;
   border-radius: 4px;
   outline: none;
-  background: #fcfcfd;
+  background: #f7eded;
   font-size: 16px;
   font-weight: 400;
   font-family: inherit;
@@ -925,39 +983,70 @@ span.imgicon {
 }
 
 span.imgicon.messagebox {
-  -webkit-mask: url(/static/img/messagebox.svg) center center no-repeat;
+  -webkit-mask: url(/img/messagebox.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #000;
 }
 
 span.imgicon.send {
-  -webkit-mask: url(/static/img/send.svg) center center no-repeat;
+  -webkit-mask: url(/img/send.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #000;
 }
 
 span.imgicon.whatsapp {
-  -webkit-mask: url(/static/img/whatsapp.svg) center center no-repeat;
+  -webkit-mask: url(/img/whatsapp.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #000;
 }
 
 span.imgicon.instagram {
-  -webkit-mask: url(/static/img/instagram.svg) center center no-repeat;
+  -webkit-mask: url(/img/instagram.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #000;
 }
 
 span.imgicon.linkedin {
-  -webkit-mask: url(/static/img/linkedin.svg) center center no-repeat;
+  -webkit-mask: url(/img/linkedin.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #000;
 }
 
 span.imgicon.twitter {
-  -webkit-mask: url(/static/img/twitter.svg) center center no-repeat;
+  -webkit-mask: url(/img/twitter.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #000;
+}
+
+@media (min-width: 1024px) {
+  body.ar .faq-div-holder.in .faq-holder {
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  body.ar .tech-part-title {
+    place-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  body.ar .testimonial-section-title {
+    padding: 80px 100px 0 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  body.ar .testimonial-section-title {
+    padding: 95px 193px 0 0;
+  }
+  body.ar .testimonial-section-holder::before {
+    left: 0;
+  }
 }
 
 .header-section {
@@ -1330,7 +1419,7 @@ span.imgicon.twitter {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: url(/static/img/bgwavesmobile.svg) top right no-repeat;
+  background: url(/img/bgwavesmobile.svg) top right no-repeat;
   background-size: cover;
 }
 
@@ -1864,7 +1953,7 @@ span.imgicon.twitter {
   left: 0;
   width: 100%;
   height: 48%;
-  background: url(/static/img/journey-line.svg) top center no-repeat;
+  background: url(/img/journey-line.svg) top center no-repeat;
   background-size: contain;
   z-index: -1;
 }
@@ -2211,7 +2300,7 @@ span.imgicon.twitter {
   justify-content: center;
   width: 21px;
   height: 21px;
-  -webkit-mask: url(/static/img/arrow.svg) center center no-repeat;
+  -webkit-mask: url(/img/arrow.svg) center center no-repeat;
   -webkit-mask-size: contain;
   background: #202331;
 }
@@ -3303,6 +3392,7 @@ span.imgicon.twitter {
     background: #f5f5f5;
     overflow: hidden;
     width: 100%;
+    max-height: 400px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3529,7 +3619,7 @@ span.imgicon.twitter {
     content: "";
     bottom: -270px;
     right: -100px;
-    background: url(/static/img/error-404.svg) center center no-repeat;
+    background: url(/img/error-404.svg) center center no-repeat;
     background-size: contain;
     width: 1200px;
     height: 840px;
@@ -3853,7 +3943,7 @@ span.imgicon.twitter {
     height: 225px;
     -webkit-transform-origin: center right;
     transform-origin: center right;
-    background: url(/static/img/bgdots.svg) center center no-repeat;
+    background: url(/img/bgdots.svg) center center no-repeat;
     background-size: cover;
     border-radius: 0;
     left: calc(100% - 80px);
@@ -3885,11 +3975,10 @@ span.imgicon.twitter {
     padding: 50px 35px 20px;
     -webkit-box-shadow: 1px 20px 40px -1px rgba(197, 203, 214, 0.12);
     box-shadow: 1px 20px 40px -1px rgba(197, 203, 214, 0.12);
-    margin-bottom: 75px;
+    margin: 0 0 75px 0 !important;
   }
   .whychooseus-item-box > div:nth-child(3n-1) {
-    margin-top: 75px;
-    margin-bottom: 0;
+    margin: 75px 0 0 0 !important;
   }
   .whychooseus-item-title h6 {
     font-size: 20px;
@@ -4001,8 +4090,7 @@ span.imgicon.twitter {
     transform: scale(0.9);
   }
   .journey-item-box::before {
-    background: url(/static/img/journey-line-desktop.svg) center center
-      no-repeat;
+    background: url(/img/journey-line-desktop.svg) center center no-repeat;
     background-size: contain;
     top: 60px;
     left: 50%;
@@ -4051,7 +4139,7 @@ span.imgicon.twitter {
     left: 0;
     width: 90px;
     height: 250px;
-    background: url(/static/img/bgdots.svg) center center no-repeat;
+    background: url(/img/bgdots.svg) center center no-repeat;
     background-size: cover;
   }
   .customer-box {
@@ -4194,7 +4282,7 @@ span.imgicon.twitter {
   .testimonial-section-main::before {
     position: absolute;
     content: "";
-    background: url(/static/img/quote.svg) center center no-repeat;
+    background: url(/img/quote.svg) center center no-repeat;
     background-size: contain;
     width: 110px;
     height: 100px;
@@ -4231,7 +4319,7 @@ span.imgicon.twitter {
   .testimonial-section-info::before {
     position: absolute;
     content: "";
-    background: url(/static/img/testi-dots.svg) center center no-repeat;
+    background: url(/img/testi-dots.svg) center center no-repeat;
     background-size: cover;
     width: 160px;
     height: 160px;
@@ -4439,6 +4527,9 @@ span.imgicon.twitter {
     position: relative;
     z-index: 1;
   }
+  .feature-main-item-img img {
+    transition: all ease-in-out 0.3s;
+  }
   .feature-main-item-img::before {
     top: 0;
     right: 100px;
@@ -4483,9 +4574,27 @@ span.imgicon.twitter {
   }
   .contact-info-item-box .contact-info-item {
     margin: 50px 0 0 0;
+    place-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .contact-info-item-box .contact-info-item:nth-child(even) {
     margin: 0 0 50px 0;
+  }
+  .contact-info-item-box .contact-info-item .contact-info-text {
+    place-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .contact-map-form-box {
     display: -ms-grid;
@@ -4521,7 +4630,7 @@ span.imgicon.twitter {
     height: 20px;
     bottom: 60px;
     left: 0;
-    background: url(/static/img/map-circle.svg) center center no-repeat;
+    background: url(/img/map-circle.svg) center center no-repeat;
     background-size: cover;
     z-index: -1;
     -webkit-transition: 0.3s ease-in;
@@ -4532,7 +4641,7 @@ span.imgicon.twitter {
     z-index: -1;
     width: 80px;
     height: 80px;
-    background: url(/static/img/map-bg-dots.svg) center center no-repeat;
+    background: url(/img/map-bg-dots.svg) center center no-repeat;
     background-size: cover;
   }
   .contact-map-box .bg-dots-1 {
@@ -4550,7 +4659,7 @@ span.imgicon.twitter {
     z-index: -1;
     -webkit-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
-    background: url(/static/img/map-cancel.svg) center center no-repeat;
+    background: url(/img/map-cancel.svg) center center no-repeat;
     background-size: cover;
   }
   .contact-map-box .bg-cancel-1 {
@@ -4564,7 +4673,7 @@ span.imgicon.twitter {
   .contact-info-section .bg-dots {
     position: absolute;
     z-index: -1;
-    background: url(/static/img/bgdots.svg) center center no-repeat;
+    background: url(/img/bgdots.svg) center center no-repeat;
     background-size: cover;
     right: 0;
     top: 40%;
@@ -4678,13 +4787,12 @@ span.imgicon.twitter {
   }
   .whychooseus-item-box > div {
     padding: 60px 45px 15px;
-    margin: 0;
   }
   .whychooseus-item-box > div:nth-child(even) {
-    margin: 80px 0 0 0;
+    margin: 80px 0 0 0 !important;
   }
   .whychooseus-item-box > div:nth-child(odd) {
-    margin: 0 0 80px 0;
+    margin: 0 0 80px 0 !important;
   }
   .whychooseus-item-title h6 {
     font-size: 22px;
@@ -4825,7 +4933,7 @@ span.imgicon.twitter {
     width: 725px;
     height: 725px;
     z-index: 2;
-    background: url(/static/img/test-bg.svg) center center no-repeat;
+    background: url(/img/test-bg.svg) center center no-repeat;
     background-size: cover;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);

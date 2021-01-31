@@ -22,8 +22,8 @@ function Footer() {
                         <li><Link href="/"><a title="home">Home</a></Link></li>
                         <li><a href="#" title="title">Loyalty Program</a></li>
                         <li><a href="#" title="title">Partners</a></li>
-                        <li><Link href="../../faq"><a href="#" title="title">FAQ's</a></Link></li>
-                        <li><Link href="../../contact_us"><a href="#" title="title">Contact us</a></Link></li>
+                        <li><Link href="/faq"><a href="#" title="title">FAQ's</a></Link></li>
+                        <li><Link href="/contact_us"><a href="#" title="title">Contact us</a></Link></li>
                     </ul>
                 </div>
                 <div class="footer-social-icon">

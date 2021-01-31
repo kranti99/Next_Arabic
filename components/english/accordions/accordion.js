@@ -14,26 +14,7 @@ const Accordion = () => {
   };
 
   return (
-      // <div class="AccordionSection">
-      //   <div class="faq_container">
-      //     {Data.map((item, index) => {
-      //       return (
-      //         <>
-      //           <div class="Wrap" onClick={() => toggle(index)} key={index}>
-      //             <h1>{item.question}</h1>
-      //             <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
-      //           </div>
-      //           {clicked === index ? (
-      //             <div class="Dropdown">
-      //               <p>{item.answer}</p>
-      //             </div>
-      //           ) : null}
-      //         </>
-      //       );
-      //     })}
-      //   </div>
-      // </div>
-
+   
                     <div class="faq-main-box">
                       <div class="faq-div-holder in">
                         <div class="faq-holder">
