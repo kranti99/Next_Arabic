@@ -1,10 +1,10 @@
 
-import HeaderMenu from '../components/english/nav-header'
-import FooterMenu from '../components/english/nav-footer'
+import HeaderMenu from '../../components/arabic/nav-header'
+import FooterMenu from '../../components/arabic/nav-footer'
 
 import Link from 'next/link'
-import Simplemap from '../components/map'
-import Popup from '../components/arabic/popup'
+import Simplemap from '../../components/map'
+import Popup from '../../components/arabic/popup'
 
 function contact_us() {
     return <div>
@@ -32,8 +32,8 @@ function contact_us() {
 
                     <div class="header-lang">
                         <ul>
-                            <li><a href="/ar/contact_us" title="title"><span class="imgicon messagebox"></span><span
-                                        class="text">العربيــة</span></a></li>
+                            <li><Link href="/contact_us"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">English</span></a></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -52,8 +52,8 @@ function contact_us() {
                 </div>
                 <div class="mobile-menu-lang">
                     <ul>
-                        <li><a href="#" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">English</span></a></li>
+                        <li><Link href="/contact_us"><a title="title"><span class="imgicon messagebox"></span><span
+                                    class="text">English</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="mobile-menu-list">
@@ -66,92 +66,94 @@ function contact_us() {
     </section>
     {/* <!-- MOBILE MENU SECTION ENDS--> */}
             {/* <!-- CONTACT INFO SECTION STARTS--> */}
-                <section class="contact-info-section">
-                    <div class="bg-dots"></div>
-                    <div class="container">
-                        <div class="contact-info-box">
-                            <div class="contact-info-title">
-                                <div class="title">
-                                    <h3>Stay Connected</h3>
-                                </div>
-                                <div class="description">
-                                    <p class="colorange">happy to talk with you</p>
+            <section class="contact-info-section">
+                <div class="bg-dots"></div>
+                <div class="container">
+                    <div class="contact-info-box">
+                        <div class="contact-info-title">
+                            <div class="title">
+                                <h3>ابقى على تواصل</h3>
+                            </div>
+                            <div class="description">
+                                <p class="colorange">نسعد بمحادثتك</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item-box">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><img src="../img/c-loc.svg" alt="" /></div>
+                                <div class="contact-info-text">
+                                    <div class="contact-info-item-title">
+                                        <h5>عنوان المكتب</h5>
+                                    </div>
+                                    <div class="contact-info-item-des">
+                                        <ul>
+                                            <li><span>الرياض, المنطقة الصناعية, شارع الأمير فيصل بن عبد العزيز, عمارة الأمراء,
+                                                    الط45ابق</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="contact-info-item-box">
-                                <div class="contact-info-item">
-                                    <div class="contact-info-icon"><img src="img/c-loc.svg" alt="" /></div>
-                                    <div class="contact-info-text">
-                                        <div class="contact-info-item-title">
-                                            <h5>Visit Us</h5>
-                                        </div>
-                                        <div class="contact-info-item-des">
-                                            <ul>
-                                                <li><span>الرياض, المنطقة الصناعية, شارع الأمير فيصل بن عبد العزيز, عمارة الأمراء,
-                                                        الط45ابق</span></li>
-                                            </ul>
-                                        </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><img src="../img/c-call.svg" alt="" /></div>
+                                <div class="contact-info-text">
+                                    <div class="contact-info-item-title">
+                                        <h5>بيانات الاتصال</h5>
+                                    </div>
+                                    <div class="contact-info-item-des">
+                                        <ul>
+                                            <li><a href="#" title="title">+966(5) 587-3407</a></li>
+                                            <li><a href="#" title="title">+966(5) 587-3407</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="contact-info-item">
-                                    <div class="contact-info-icon"><img src="img/c-call.svg" alt="" /></div>
-                                    <div class="contact-info-text">
-                                        <div class="contact-info-item-title">
-                                            <h5>Call Us</h5>
-                                        </div>
-                                        <div class="contact-info-item-des">
-                                            <ul>
-                                                <li><a href="#" title="title">+966(5) 587-3407</a></li>
-                                                <li><a href="#" title="title">+966(5) 587-3407</a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon"><img src="../img/c-mail.svg" alt="" /></div>
+                                <div class="contact-info-text">
+                                    <div class="contact-info-item-title">
+                                        <h5>راسلنا عبر البريد</h5>
                                     </div>
-                                </div>
-                                <div class="contact-info-item">
-                                    <div class="contact-info-icon"><img src="img/c-mail.svg" alt="" /></div>
-                                    <div class="contact-info-text">
-                                        <div class="contact-info-item-title">
-                                            <h5>Email US</h5>
-                                        </div>
-                                        <div class="contact-info-item-des">
-                                            <ul>
-                                                <li><a href="#" title="title">info@bonat.io</a></li>
-                                                <li><a href="#" title="title">sales@bonat.io</a></li>
-                                            </ul>
-                                        </div>
+                                    <div class="contact-info-item-des">
+                                        <ul>
+                                            <li><a href="#" title="title">info@bonat.io</a></li>
+                                            <li><a href="#" title="title">sales@bonat.io</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </section>
                 {/* <!-- CONTACT INFO SECTION ENDS--> */}
                 {/* <!-- CONTACT MAP SECTION STARTS--> */}
                 <section class="contact-map-form-section">
                     <div class="container">
-                        <div class="contact-map-form-box">
+                        <div class="contact-map-form-box"  style={{direction:"rtl"}}>
                             <div class="contact-form-box">
                                 <div class="contact-form-title-box">
                                     <div class="title">
-                                        <h3>Contact us</h3>
+                                        <h3>تواصل معنا</h3>
                                     </div>
                                     <div class="description">
-                                        <p class="colorange">Ready to ask your questions</p>
+                                        <p class="colorange">فريقنا جاهز للاجابة عن استفساراتكم</p>
                                     </div>
                                 </div>
                                 <div class="contact-form-item">
                                     <form class="contact-form-holder" action="">
-                                        <div class="form-group"><input class="form-control" type="text" placeholder="Full Name"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='Full Name'" /></div>
-                                        <div class="form-group"><input class="form-control" type="email" placeholder="Email"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='Email'" /></div>
-                                        <div class="form-group col2"><input class="form-control" type="text" placeholder="Mobile No"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='Mobile No'" /></div>
+                                        <div class="form-group"><input class="form-control" type="text" placeholder="الاسم كاملاً"
+                                                onfocus="this.placeholder=''" onblur="this.placeholder='الاسم كاملاً'" /></div>
+                                        <div class="form-group"><input class="form-control" type="email"
+                                                placeholder="البريد الالكتروني" onfocus="this.placeholder=''"
+                                                onblur="this.placeholder='البريد الالكتروني'" /></div>
+                                        <div class="form-group col2"><input class="form-control" type="text"
+                                                placeholder="رقم الجوال" onfocus="this.placeholder=''"
+                                                onblur="this.placeholder='رقم الجوال'" /></div>
                                         <div class="form-group col2"><textarea class="form-control" rows="7"
-                                                placeholder="Message Details" onfocus="this.placeholder=''"
-                                                onblur="this.placeholder='Message Details'"></textarea></div>
-                                        <div class="form-group col2 btn-holder"><button class="btn orange" type="submit">Send
-                                                Now</button></div>
+                                                placeholder="تفاصيل الرسالة" onfocus="this.placeholder=''"
+                                                onblur="this.placeholder='تفاصيل الرسالة'"></textarea></div>
+                                        <div class="form-group col2 btn-holder"><button class="btn orange" type="submit">أرسل
+                                                الرسالة</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -160,9 +162,7 @@ function contact_us() {
                                 <div class="bg-dots-2"></div>
                                 <div class="bg-cancel-1"></div>
                                 <div class="bg-cancel-2"></div>
-                                <div class="map-holder">
-                                    <Simplemap />
-                                </div>
+                                <div class="map-holder"><span>Insert Iframe Here</span></div>
                             </div>
                         </div>
                     </div>
@@ -179,8 +179,8 @@ function contact_us() {
                     <ul>
                         <li><a href="#" title="title"><span class="imgicon send"></span><span class="text">Saudi
                                     Arabia</span></a></li>
-                        <li><a href="/ar/contact_us" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">العربيـــة</span></a></li>
+                        <li><a href="/contact_us" title="title"><span class="imgicon messagebox"></span><span
+                                    class="text">English</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">

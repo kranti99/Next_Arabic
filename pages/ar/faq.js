@@ -1,8 +1,8 @@
-import HeaderMenu from '../components/english/nav-header'
-import FooterMenu from '../components/english/nav-footer'
-import Accordion from '../components/english/accordions/accordion'
+import HeaderMenu from '../../components/english/nav-header'
+import FooterMenu from '../../components/english/nav-footer'
+import Accordion from '../../components/english/accordions/accordion'
 
-import Popup from '../components/english/popup'
+import Popup from '../../components/english/popup'
 import Link from 'next/link'
 
 
@@ -32,8 +32,8 @@ function contact_us() {
 
                     <div class="header-lang">
                         <ul>
-                            <li><a href="/ar/faq" title="title"><span class="imgicon messagebox"></span><span
-                                        class="text">العربيــة</span></a></li>
+                            <li><Link href="/faq"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">English</span></a></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -52,13 +52,13 @@ function contact_us() {
                 </div>
                 <div class="mobile-menu-lang">
                     <ul>
-                        <li><a href="#" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">English</span></a></li>
+                        <li><Link href="/faq"><a title="title"><span class="imgicon messagebox"></span><span
+                                    class="text">English</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="mobile-menu-list">
                     <ul>
-                        <li><a href="/ar/faq" title="FAQ">سياسة الاستخدام</a></li>
+                        <li><a href="#" >سياسة الاستخدام</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,14 +72,16 @@ function contact_us() {
                         <div class="faq-section-box">
                             <div class="faq-title-box">
                                 <div class="title">
-                                    <h3>FAQs</h3>
+                                    <h3>الأسئلة الشائعة</h3>
                                 </div>
                                 <div class="description">
-                                    <p class="colorange">Most of what was inquired about in Bonat</p>
+                                    <p class="colorange">اكثر ما تم الاستفسار عنه في بونات</p>
                                 </div>
                             </div>
                             <Accordion />
-                            <div class="faq-button-box"><Link href="../../contact_us"><a class="btn orange" title="title">Send Message</a></Link></div>
+                            <div class="faq-button-box">
+                                <Link href="../../contact_us"><a class="btn orange" title="title">أرسل الرسالة</a></Link>
+                            </div>
                         </div>
                     </div>
             </section>
@@ -96,8 +98,8 @@ function contact_us() {
                     <ul>
                         <li><a href="#" title="title"><span class="imgicon send"></span><span class="text">Saudi
                                     Arabia</span></a></li>
-                        <li><a href="/ar/faq" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">العربيـــة</span></a></li>
+                        <li><Link href="/faq"><a title="title"><span class="imgicon messagebox"></span><span
+                                    class="text">العربيـــة</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="footer-menu">

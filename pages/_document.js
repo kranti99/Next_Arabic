@@ -10,15 +10,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head lang="en">
-        <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
-            <meta charSet="UTF-8" />
-            {/* <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> */}
-            <meta name="noindex" content="nofollow" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="/custom_app.js" crossorigin="anonymous"></script>
+          <script src="/custom_app.js"></script>
 
         </body>
       </Html>
