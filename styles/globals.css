@@ -4655,7 +4655,7 @@ span.imgicon.twitter {
 }
 .modal {
   position: fixed;
-  top: 10%;
+  top: 0%;
   left: 0;
   z-index: 1050;
   display: none;
@@ -4719,13 +4719,12 @@ span.imgicon.twitter {
   border-radius: 0.3rem;
   outline: 0;
 }
-
-@media (min-width: 576px) {
+.modal-header {
+  margin-top: 45px;
 }
 /* call to action css start*/
 .popup-section {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -4734,10 +4733,7 @@ span.imgicon.twitter {
   grid-gap: 130px;
   direction: rtl;
   height: 100%;
-  overflow: auto;
   padding-bottom: 50px;
-  border-left: 1px solid #707070;
-  border-right: 1px solid #707070;
 }
 .popup-section::before {
   position: absolute;
@@ -4788,6 +4784,12 @@ span.imgicon.twitter {
 }
 .popup-section-logo {
   margin-right: 5px;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+}
+.popup-section-logo img {
+  max-width: 100px;
 }
 .popup-section-box {
   display: -ms-grid;
@@ -4883,6 +4885,12 @@ span.imgicon.twitter {
 .popup-section-information > .info-text span {
   color: #979ea6;
 }
+.form-control.pop {
+  background: transparent;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 0;
+  padding: 0 0 15px 0;
+}
 @media (min-width: 768px) {
   .modal-dialog {
     max-width: 700px;
@@ -4930,8 +4938,22 @@ span.imgicon.twitter {
 }
 @media (min-width: 1250px) {
   .modal-dialog {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
+  }
+  .modal-content .close {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #202331;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -30px;
+    cursor: pointer;
+  }
+  .modal-content .close span {
+    font-size: 30px;
+    color: #fff;
   }
   .popup-section {
     width: 900px;

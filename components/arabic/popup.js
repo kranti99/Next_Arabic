@@ -16,15 +16,13 @@ const ModalExample = (props) => {
     <div>
       <Button color="btn small orange" onClick={toggle} title="التجربة">التجربة</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}></ModalHeader>
-        <ModalBody  style={{margin:"30px"}}>
+        <ModalHeader toggle={toggle}>
+        </ModalHeader>
+        <ModalBody>
           <section class="popup-section">
               <div class="popup-section-header">
                   <div class="popup-section-logo">
                       <img src="img/logo.svg" alt=""/>
-                  </div>
-                  <div class="popup-section-closetrigger" id="popclose">
-
                   </div>
               </div>
               <div class="popup-section-box">
