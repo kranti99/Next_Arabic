@@ -278,22 +278,22 @@ export default function Home() {
                         <div class="feature-main-item-box">
                             <div class="feature-main-item" onMouseOver={changeBackground1}>
                                 <div class="title">
-                                    <h5>لوحة تحكم سهلة الاستخدام</h5>
+                                    <h5>User friendly dashboard</h5>
                                 </div>
                             </div>
                             <div class="feature-main-item"  onMouseOver={changeBackground2}>
                                 <div class="title">
-                                    <h5>تحليل بيانات دقيقة</h5>
+                                    <h5>Accurate data analysis</h5>
                                 </div>
                             </div>
                             <div class="feature-main-item"  onMouseOver={changeBackground3}>
                                 <div class="title">
-                                    <h5>تحليل بيانات دقيقة</h5>
+                                    <h5>Detailed reporting</h5>
                                 </div>
                             </div>
                             <div class="feature-main-item"  onMouseOver={changeBackground4}>
                                 <div class="title">
-                                    <h5>تحليل بيانات دقيقة</h5>
+                                    <h5>Automated markting tools</h5>
                                 </div>
                             </div>
                         </div>
@@ -371,9 +371,16 @@ export default function Home() {
                 <div class="customer-item-holder">
                     <div class="customer-item-box">
                         <div class="customer-item">
-                            <div class="customer-item-img"><img src="img/customerimg4.svg" alt="" /></div>
+                            <div class="customer-item-img"><img src="img/customerimg1.svg" alt="" /></div>
                             <div class="description">
-                                <p>Gift thier family and friends</p>
+                                <p>A user-friendly app with gamefication features to monitor their points</p>
+                            </div>
+                        </div>
+                        <div class="customer-item">
+                            <div class="customer-item-img"><img src="img/customerimg3.svg" alt="" /></div>
+                            <div class="description">
+                                <p>Send reviews and complaints to the store manager directly and in privacy after each
+                                    visit</p>
                             </div>
                         </div>
                         <div class="customer-item">
@@ -382,21 +389,11 @@ export default function Home() {
                                 <p>Direct communication with the store</p>
                             </div>
                         </div>
-                        <div class="customer-item">
-                            <div class="customer-item-img"><img src="img/customerimg6.svg" alt="" /></div>
-                            <div class="description">
-                                <p>Skip the que by ordering from the app to pick up in-store</p>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                     <div class="custom-item-img"><img src="img/custom-item-img.svg" alt="" /></div>
                     <div class="customer-item-box">
-                        <div class="customer-item">
-                            <div class="customer-item-img"><img src="img/customerimg1.svg" alt="" /></div>
-                            <div class="description">
-                                <p>A user-friendly app with gamefication features to monitor their points</p>
-                            </div>
-                        </div>
                         <div class="customer-item">
                             <div class="customer-item-img"><img src="img/customerimg2.svg" alt="" /></div>
                             <div class="description">
@@ -404,10 +401,16 @@ export default function Home() {
                             </div>
                         </div>
                         <div class="customer-item">
-                            <div class="customer-item-img"><img src="img/customerimg3.svg" alt="" /></div>
+                            <div class="customer-item-img"><img src="img/customerimg4.svg" alt="" /></div>
                             <div class="description">
-                                <p>Send reviews and complaints to the store manager directly and in privacy after each
-                                    visit</p>
+                                <p>Gift thier family and friends</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-item">
+                            <div class="customer-item-img"><img src="img/customerimg6.svg" alt="" /></div>
+                            <div class="description">
+                                <p>Skip the que by ordering from the app to pick up in-store</p>
                             </div>
                         </div>
                     </div>

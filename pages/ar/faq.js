@@ -1,8 +1,8 @@
-import HeaderMenu from '../../components/english/nav-header'
-import FooterMenu from '../../components/english/nav-footer'
-import Accordion from '../../components/english/accordions/accordion'
+import HeaderMenu from '../../components/arabic/nav-header'
+import FooterMenu from '../../components/arabic/nav-footer'
+import Accordion from '../../components/arabic/accordions/accordion'
 
-import Popup from '../../components/english/popup'
+import Popup from '../../components/arabic/popup'
 import Link from 'next/link'
 
 
@@ -18,7 +18,7 @@ function contact_us() {
                         <div class="menu-bar" id="mobilemenutrigger">
                             <span></span><span></span><span></span><span></span></div>
                     </div>
-                    <div class="header-logo"><Link href="/"><a title="Home-Bonat"><img src="img/logo.svg" alt="" /></a></Link></div>
+                    <div class="header-logo"><Link href="/ar"><a title="Home-Bonat"><img src="../img/logo.svg" alt="" /></a></Link></div>
                 </div>
                 <div class="header-menu-box">
                     <div class="header-menu">
@@ -93,13 +93,13 @@ function contact_us() {
     <section class="footer-section">
         <div class="container">
             <div class="footer-box">
-                <div class="footer-logo"><Link href="/"><a title="title"><img src="img/logo.svg" alt="" /></a></Link></div>
+                <div class="footer-logo"><Link href="/ar"><a title="title"><img src="../img/logo.svg" alt="" /></a></Link></div>
                 <div class="footer-lang">
                     <ul>
                         <li><a href="#" title="title"><span class="imgicon send"></span><span class="text">Saudi
                                     Arabia</span></a></li>
                         <li><Link href="/faq"><a title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">العربيـــة</span></a></Link></li>
+                                    class="text">English</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
@@ -115,12 +115,12 @@ function contact_us() {
                 </div>
                 <div class="footer-download">
                     <div class="footer-download-item"><a href="#" title="title">
-                            <div class="fdown-icon"><img src="img/apple.svg" alt="" /></div>
+                            <div class="fdown-icon"><img src="../img/apple.svg" alt="" /></div>
                             <div class="fdown-textbox"><span class="text1">حمل التطبيق الان</span><span
                                     class="text2">أبل ستــــور</span></div>
                         </a></div>
                     <div class="footer-download-item"><a href="#" title="title">
-                            <div class="fdown-icon"><img src="img/playstore.svg" alt="" /></div>
+                            <div class="fdown-icon"><img src="../img/playstore.svg" alt="" /></div>
                             <div class="fdown-textbox"><span class="text1">حمل التطبيق الان</span><span
                                     class="text2">جوجل بلاي</span></div>
                         </a></div>

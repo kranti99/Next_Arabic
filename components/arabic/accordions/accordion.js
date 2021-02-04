@@ -16,7 +16,7 @@ const Accordion = () => {
   return (
    
                     <div class="faq-main-box">
-                      <div class="faq-div-holder in">
+                      <div class="faq-div-holder in" style={{direction: "rtl"}}>
                         <div class="faq-holder">
 
                             {Data.map((item, index) => {
@@ -38,9 +38,9 @@ const Accordion = () => {
                            })}
                            </div>
 
-                           <div class="quick-contact">
+                           <div class="quick-contact" style={{marginright:"30px"}}>
                               <div class="quick-contact-holder">
-                                  <div class="quick-contact-icon"><img src="img/quick-contact.svg" alt="" /></div>
+                                  <div class="quick-contact-icon"><img src="../img/quick-contact.svg" alt="" /></div>
                                   <div class="quick-contact-title">
                                       <h6>Call Us anytime</h6>
                                   </div>

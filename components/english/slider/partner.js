@@ -8,8 +8,8 @@ export default (props) => {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     duration: 1000,
-    slidesPerView: 4,
-    spacing: 15,
+    slidesPerView: 5,
+    spacing: 60,
     dragStart: () => {
       setPause(true)
     },
@@ -55,6 +55,10 @@ export default (props) => {
         <div className="keen-slider__slide number-slide5">    
             <a href="#" title=""><img src="img/slacklogo.png" alt="" /></a>
         </div>
+        <div className="keen-slider__slide number-slide3">    
+            <a href="#" title=""><img src="img/facebooklogo.png" alt="" /></a>
+        </div>
+        
       </div>
   )
 }

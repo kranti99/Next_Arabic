@@ -18,7 +18,7 @@ function contact_us() {
                         <div class="menu-bar" id="mobilemenutrigger">
                             <span></span><span></span><span></span><span></span></div>
                     </div>
-                    <div class="header-logo"><Link href="/"><a title="Home-Bonat"><img src="img/logo.svg" alt="" /></a></Link></div>
+                    <div class="header-logo"><Link href="/"><a title="Home-Bonat"><img src="/img/logo.svg" alt="" /></a></Link></div>
                 </div>
                 <div class="header-menu-box">
                     <div class="header-menu">
@@ -32,8 +32,8 @@ function contact_us() {
 
                     <div class="header-lang">
                         <ul>
-                            <li><a href="/ar/faq" title="title"><span class="imgicon messagebox"></span><span
-                                        class="text">العربيــة</span></a></li>
+                            <li><Link href="/ar/faq"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">العربيــة</span></a></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -96,8 +96,8 @@ function contact_us() {
                     <ul>
                         <li><a href="#" title="title"><span class="imgicon send"></span><span class="text">Saudi
                                     Arabia</span></a></li>
-                        <li><a href="/ar/faq" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">العربيـــة</span></a></li>
+                        <li><Link href="/ar/faq"><a title="title"><span class="imgicon messagebox"></span><span
+                                    class="text">العربيـــة</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="footer-menu">

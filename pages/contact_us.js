@@ -32,8 +32,8 @@ function contact_us() {
 
                     <div class="header-lang">
                         <ul>
-                            <li><a href="/ar/contact_us" title="title"><span class="imgicon messagebox"></span><span
-                                        class="text">العربيــة</span></a></li>
+                            <li><Link href="/ar/contact_us"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">العربيــة</span></a></Link></li>
                         </ul>
                     </div>
                 </div>
