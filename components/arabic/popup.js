@@ -22,7 +22,7 @@ const ModalExample = (props) => {
           <section class="popup-section">
               <div class="popup-section-header">
                   <div class="popup-section-logo">
-                      <img src="img/logo.svg" alt=""/>
+                      <img src="../img/logo.svg" alt=""/>
                   </div>
               </div>
               <div class="popup-section-box">
@@ -71,7 +71,7 @@ const ModalExample = (props) => {
                               <span>اذا واجهتك مشكلة, لا تترد في التواصل معنا مباشرة</span>
                           </div>
                           <a class="info-btn" href="#">
-                              <img src="img/whatsapp.svg" alt=""/>
+                              <img src="../img/whatsapp.svg" alt=""/>
                               <span class="text">تواصل معنا</span>
                           </a>
                       </div>

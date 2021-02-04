@@ -11,6 +11,18 @@ import Popup from '../../components/arabic/popup'
 import AnimatedTyping from '../../components/arabic/typing.js'
 
 export default function Home() {
+    function changeBackground1(e){
+        document.querySelector('#TextHoverImage').src = '../img/feat-main-item-img.png';
+    }
+    function changeBackground2(e){
+        document.querySelector('#TextHoverImage').src = '../img/2-sc.jpg';
+    }
+    function changeBackground3(e){
+        document.querySelector('#TextHoverImage').src = '../img/3-sc.jpg';
+    }
+    function changeBackground4(e){
+        document.querySelector('#TextHoverImage').src = '../img/feat-main-item-img.png';
+    }
   return (
 
     <div>
@@ -90,8 +102,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div class="description">
-                            <p class="fw500">من خلال ادوات تعزز <span class="colorange dotunderline">معدل
-                                    تفاعل|</span>العملاء</p>
+                            <p class="fw500">من خلال ادوات تعزز <span class="colorange dotunderline"><AnimatedTyping /></span>العملاء</p>
                         </div>
                         <div class="btn-holder"><a class="btn blue fw500 fs-18" href="#" title="">ابدأ بتجربتك الان</a>
                         </div>
@@ -109,7 +120,7 @@ export default function Home() {
         <section class="technology-partner">
             <div class="container">
                 <div class="tech-part-box">
-                    <div class="tech-part-title">
+                    <div class="tech-part-title" style={{direction:"rtl"}}>
                         <div class="title">
                             <h1 class="fw700">فخورون بثقة شركاؤنا</h1>
                         </div>
@@ -261,9 +272,9 @@ export default function Home() {
                         </div>
                     </div>
                     <div class="feature-main-item-holder">
-                        <div class="feature-main-item-img"><img src="../img/feat-main-item-img.png" alt="" /></div>
+                        <div class="feature-main-item-img"><img src="../img/feat-main-item-img.png" alt="" id="TextHoverImage"/></div>
                         <div class="feature-main-item-box">
-                            <div class="feature-main-item">
+                            <div class="feature-main-item" onMouseOver={changeBackground1}>
                                 <div class="title">
                                     <h5>لوحة تحكم سهلة الاستخدام</h5>
                                 </div>
@@ -272,7 +283,7 @@ export default function Home() {
                                         النص العربى</p>
                                 </div>
                             </div>
-                            <div class="feature-main-item">
+                            <div class="feature-main-item" onMouseOver={changeBackground2}>
                                 <div class="title">
                                     <h5>تحليل بيانات دقيقة</h5>
                                 </div>
@@ -408,7 +419,7 @@ export default function Home() {
     </section>
     {/* <!-- CUSTOMERS SECTION ENDS--> */}
     {/* <!-- TESTIMONIAL SECTION STARTS--> */}
-    <section class="testimonial-section">
+    <section class="testimonial-section" style={{direction:"rtl"}}>
         <div class="container">
             <div class="testimonial-section-holder">
                 <div class="testimonial-section-title">

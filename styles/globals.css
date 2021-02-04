@@ -1572,6 +1572,7 @@ span.imgicon.twitter {
 .feature-main-item-box .feature-main-item .description * {
   color: #fff;
   font-weight: 400;
+  font-size: 15px !important;
 }
 .feature-main-item-box .feature-main-item:hover::before {
   border-color: #ffd166;
@@ -4825,8 +4826,9 @@ span.imgicon.twitter {
 .popup-section-submit .btn {
   height: 100%;
   border-radius: 0;
-  font-size: 18px;
-  padding: 22px 65px 25px;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 18px 55px 18px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -4884,12 +4886,45 @@ span.imgicon.twitter {
 }
 .popup-section-information > .info-text span {
   color: #979ea6;
+  font-size: 14px;
 }
 .form-control.pop {
   background: transparent;
   border-bottom: 1px solid #d4d4d4;
   border-radius: 0;
   padding: 0 0 15px 0;
+  font-size: 14px;
+}
+.form-control.pop::placeholder {
+  color: #1d293f;
+}
+.form-control.pop:active,
+.form-control.pop:focus {
+  border-bottom: 1px solid #1d293f;
+}
+.modal-content .close {
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: #202331;
+}
+.modal-content .close span {
+  font-size: 30px;
+  color: #fff;
+}
+@media (max-width: 450px) {
+  .popup-section {
+    grid-gap: 80px;
+  }
+  .popup-section-title h3 {
+    font-size: 22px;
+  }
+  .popup-section-form {
+    grid-gap: 20px;
+  }
 }
 @media (min-width: 768px) {
   .modal-dialog {
@@ -4897,7 +4932,8 @@ span.imgicon.twitter {
     margin: 0 auto;
   }
   .popup-section {
-    grid-gap: 100px;
+    grid-gap: 80px;
+    min-height: 75vh;
   }
   .popup-section::before {
     left: -21%;
@@ -4924,15 +4960,14 @@ span.imgicon.twitter {
 }
 @media (min-width: 992px) {
   .popup-section {
-    width: 80%;
-    grid-gap: 120px;
+    grid-gap: 90px;
   }
   .popup-section-box {
-    grid-gap: 70px;
+    grid-gap: 50px;
     padding: 0 75px;
   }
   .modal-dialog {
-    max-width: 850px;
+    max-width: 700px;
     margin: 0 auto;
   }
 }
@@ -4941,32 +4976,18 @@ span.imgicon.twitter {
     max-width: 900px;
     margin: 0 auto;
   }
-  .modal-content .close {
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: #202331;
-    position: relative;
-    z-index: 1;
-    margin-bottom: -30px;
-    cursor: pointer;
-  }
-  .modal-content .close span {
-    font-size: 30px;
-    color: #fff;
-  }
   .popup-section {
     width: 900px;
-    grid-gap: 125px;
+    grid-gap: 100px;
   }
   .popup-section::before {
     top: 75px;
-    left: -19%;
-    width: 320px;
-    height: 275px;
+    left: -10%;
+    width: 300px;
+    top: 0;
   }
   .popup-section-box {
-    grid-gap: 75px;
+    grid-gap: 50px;
     padding: 0 100px;
   }
   .popup-section-form {
@@ -4989,18 +5010,20 @@ span.imgicon.twitter {
   }
 }
 @media (min-width: 1920px) {
+  .modal-dialog {
+    max-width: 1180px;
+  }
   .popup-section {
     width: 1172px;
-    grid-gap: 130px;
+    grid-gap: 160px;
   }
   .popup-section::before {
-    top: 84px;
-    left: -15%;
+    top: 40px;
+    left: -8%;
     width: 340px;
-    height: 320px;
   }
   .popup-section-box {
-    grid-gap: 80px;
+    grid-gap: 100px;
     padding: 0 140px;
   }
   .popup-section-form {

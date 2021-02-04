@@ -223,16 +223,17 @@ export default function Home() {
                     </div>
                 </div>
                 <div class="loyalty-slider-box">
-                    <div class="loyalty-item" data-text="01"> <a href="#" title="">
-                            <div class="loyalty-img"><img src="img/loyaltyimg1.svg" alt="" /></div>
+                    <div class="loyalty-item" data-text="03"> <a href="#" title="">
+                            <div class="loyalty-img"><img src="img/loyaltyimg3.svg" alt="" /></div>
                             <div class="title">
-                                <h4>Grow Sales</h4>
+                                <h4>Increase Profit</h4>
                             </div>
                             <div class="description">
-                                <p>Loyal customers spend 20% more than new customers </p>
+                                <p>Improving retention by 2% will increase profit by 25%- 95%</p>
                             </div>
-                            <div class="reviewed-by"><span>Harvard Business Review</span></div>
-                        </a></div>
+                            <div class="reviewed-by"><span>(Bain and co)</span></div>
+                        </a>
+                    </div>
                     <div class="loyalty-item" data-text="02"> <a href="#" title="">
                             <div class="loyalty-img"><img src="img/loyaltyimg2.svg" alt="" /></div>
                             <div class="title">
@@ -243,16 +244,17 @@ export default function Home() {
                             </div>
                             <div class="reviewed-by"><span>(Bain and co)</span></div>
                         </a></div>
-                    <div class="loyalty-item" data-text="03"> <a href="#" title="">
-                            <div class="loyalty-img"><img src="img/loyaltyimg3.svg" alt="" /></div>
+                    <div class="loyalty-item" data-text="01"> <a href="#" title="">
+                            <div class="loyalty-img"><img src="img/loyaltyimg1.svg" alt="" /></div>
                             <div class="title">
-                                <h4>Increase Profit</h4>
+                                <h4>Grow Sales</h4>
                             </div>
                             <div class="description">
-                                <p>Improving retention by 2% will increase profit by 25%- 95%</p>
+                                <p>Loyal customers spend 20% more than new customers </p>
                             </div>
-                            <div class="reviewed-by"><span>(Bain and co)</span></div>
-                        </a></div>
+                            <div class="reviewed-by"><span>Harvard Business Review</span></div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

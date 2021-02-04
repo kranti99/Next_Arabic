@@ -15,7 +15,7 @@ export default (props) => {
 
   return (
     <>
-      <div className="navigation-wrapper">
+      <div className="navigation-wrapper" style={{direction:"rtl"}}>
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1">
                 <div class="testimonial-item">

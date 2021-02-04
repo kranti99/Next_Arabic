@@ -162,7 +162,7 @@ function contact_us() {
                                 <div class="bg-dots-2"></div>
                                 <div class="bg-cancel-1"></div>
                                 <div class="bg-cancel-2"></div>
-                                <div class="map-holder"><span>Insert Iframe Here</span></div>
+                                <div class="map-holder"><Simplemap /></div>
                             </div>
                         </div>
                     </div>
