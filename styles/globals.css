@@ -36,90 +36,6 @@
 /* bootstrap class */
 /* accordion collps  */
 
-.modal-open {
-  overflow: hidden;
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.modal {
-  position: fixed;
-  top: 10%;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  outline: 0;
-}
-.modal-content {
-  padding: 20px;
-}
-.fade {
-  transition: opacity 0.15s linear;
-}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0.5rem;
-  pointer-events: none;
-}
-.modal.show .modal-dialog {
-  -webkit-transform: none;
-  transform: none;
-}
-.modal.fade .modal-dialog {
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  -webkit-transform: translate(0, -50px);
-  transform: translate(0, -50px);
-}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0.5rem;
-  pointer-events: none;
-}
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-}
-.modal-backdrop.show {
-  opacity: 0.5;
-}
-.modal-backdrop.fade {
-  opacity: 0.5;
-}
-.modal-content {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
-  }
-}
-
 /* fade in effect */
 .fade-in {
   animation: fadeIn ease 3s;
@@ -4728,6 +4644,84 @@ span.imgicon.twitter {
 }
 /*# sourceMappingURL=style.css.map */
 
+/* modal css */
+
+.modal-open {
+  overflow: hidden;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.fade {
+  transition: opacity 0.15s linear;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+.modal.fade .modal-dialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+.modal-backdrop.fade {
+  opacity: 0.5;
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+@media (min-width: 576px) {
+}
 /* call to action css start*/
 .popup-section {
   width: 90%;
@@ -4802,6 +4796,9 @@ span.imgicon.twitter {
   grid-auto-rows: min-content;
   grid-gap: 60px;
   padding: 0 15px;
+}
+.popup-section-title h3 {
+  font-size: 32px;
 }
 .popup-section-form {
   display: -ms-grid;
@@ -4887,8 +4884,12 @@ span.imgicon.twitter {
   color: #979ea6;
 }
 @media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 700px;
+    margin: 0 auto;
+  }
   .popup-section {
-    grid-gap: 150px;
+    grid-gap: 100px;
   }
   .popup-section::before {
     left: -21%;
@@ -4916,17 +4917,25 @@ span.imgicon.twitter {
 @media (min-width: 992px) {
   .popup-section {
     width: 80%;
-    grid-gap: 160px;
+    grid-gap: 120px;
   }
   .popup-section-box {
     grid-gap: 70px;
     padding: 0 75px;
   }
+  .modal-dialog {
+    max-width: 850px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1250px) {
+  .modal-dialog {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   .popup-section {
     width: 900px;
-    grid-gap: 175px;
+    grid-gap: 125px;
   }
   .popup-section::before {
     top: 75px;
@@ -4942,6 +4951,10 @@ span.imgicon.twitter {
     grid-column-gap: 80px;
     grid-row-gap: 35px;
   }
+  .popup-section-form .form-control::placeholder,
+  .popup-section-form .form-control::-ms-input-placeholder {
+    color: #202331;
+  }
   .popup-section-submit {
     display: -ms-grid;
     display: grid;
@@ -4956,7 +4969,7 @@ span.imgicon.twitter {
 @media (min-width: 1920px) {
   .popup-section {
     width: 1172px;
-    grid-gap: 190px;
+    grid-gap: 130px;
   }
   .popup-section::before {
     top: 84px;

@@ -15,9 +15,8 @@ const ModalExample = (props) => {
     <div>
       <Button color="btn small orange" onClick={toggle} title="Request a Demo">Request a Demo</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Request A Demo</ModalHeader>
         <ModalBody>
-          <section class="popup-section">
+          <section class="popup-section" style={{margin:"30px"}}>
                 <div class="popup-section-header">
                     <div class="popup-section-logo">
                         <img src="img/logo.svg" alt=""/>
