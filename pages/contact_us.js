@@ -4,7 +4,7 @@ import FooterMenu from '../components/english/nav-footer'
 
 import Link from 'next/link'
 import Simplemap from '../components/map'
-import Popup from '../components/English/popup'
+import Popup from '../components/english/popup'
 
 function contact_us() {
     return <div>
