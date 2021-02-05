@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
-const ModalExample = (props) => {
+const Popup = (props) => {
   const {
     buttonLabel,
     className
@@ -87,4 +87,4 @@ const ModalExample = (props) => {
   );
 }
 
-export default ModalExample;
+export default Popup;
