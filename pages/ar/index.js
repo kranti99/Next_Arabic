@@ -6,9 +6,11 @@ import React, {useState} from 'react'
 import HeaderMenu from '../../components/arabic/nav-header'
 import FooterMenu from '../../components/arabic/nav-footer'
 import Partner from '../../components/arabic/slider/partner'
+
 import Testimonials from '../../components/arabic/slider/testimonials'
 import Popup from '../../components/arabic/popup'
 import AnimatedTyping from '../../components/arabic/typing.js'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 export default function Home() {
     function changeBackground1(e){
@@ -23,10 +25,83 @@ export default function Home() {
     function changeBackground4(e){
         document.querySelector('#TextHoverImage').src = '../img/feat-main-item-img.png';
     }
-  return (
+    const [modal, setModal] = useState(false);
 
+    const toggle = () => setModal(!modal);
+  return (
     <div>
       <Head> <title>Bonat Home</title></Head>
+
+    {/* pop up section starts here  */}
+    <Modal isOpen={modal} toggle={toggle}>
+        <ModalHeader toggle={toggle}>
+        </ModalHeader>
+        <ModalBody>
+          <section class="popup-section" style={{direction:"rtl"}}>
+              <div class="popup-section-header">
+                  <div class="popup-section-logo">
+                      <img src="../img/logo.svg" alt=""/>
+                  </div>
+              </div>
+              <div class="popup-section-box">
+                  <div class="popup-section-title">
+                      <div class="title">
+                          <h3>Get to watch the features in action</h3>
+                      </div>
+                  </div>
+                  <div class="popup-section-formbox">
+                      <form class="popup-section-form" action="">
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* Full Name"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* Work Field"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* Mobile No"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* أدخل مجال العمل (في حال اختيار اخرى)"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* Email"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="*POS Type"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* Company"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* How did you know about Bonat"/>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control pop" type="text" placeholder="* City"/>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="popup-section-submit">
+                      <button class="btn orange" type="submit">
+                          Submit
+                      </button>
+                      <div class="popup-section-information">
+                          <div class="info-text">
+                              <span>اذا واجهتك مشكلة, لا تترد في التواصل معنا مباشرة</span>
+                          </div>
+                          <a class="info-btn" href="#">
+                              <img src="../img/whatsapp.svg" alt=""/>
+                              <span class="text">تواصل معنا</span>
+                          </a>
+                      </div>
+                  </div>
+              </div> 
+          </section>
+        </ModalBody>
+        <ModalFooter>
+          {/* <Button color="secondary" onClick={toggle}>Cancel</Button> */}
+        </ModalFooter>
+      </Modal>
+      {/* pop up section ends here  */}
 
     {/* <!-- HEADER SECTION STARTS--> */}
     <section class="header-section">
@@ -104,7 +179,7 @@ export default function Home() {
                         <div class="description">
                             <p class="fw500">من خلال ادوات تعزز <span class="colorange dotunderline"><AnimatedTyping /></span>العملاء</p>
                         </div>
-                        <div class="btn-holder"><a class="btn blue fw500 fs-18" href="#" title="">ابدأ بتجربتك الان</a>
+                        <div class="btn-holder"><a class="btn blue fw500 fs-18" title="" onClick={toggle}>ابدأ بتجربتك الان</a>
                         </div>
                     </div>
                     <div class="banner-img"><img src="../img/banner-img.png" alt="" />
@@ -117,7 +192,7 @@ export default function Home() {
         {/* <!-- BANNER SECTION ENDS--> */}
 
          {/* <!-- TECHNOLOGY PARTNERS SECTION STARTS--> */}
-        <section class="technology-partner">
+        <section class="technology-partner" id="partner_ar">
             <div class="container">
                 <div class="tech-part-box">
                     <div class="tech-part-title" style={{direction:"rtl"}}>
@@ -445,7 +520,7 @@ export default function Home() {
                                 <p>اطلب تجربة وانشئ نظام الولاء الخاص بك</p>
                             </div>
                         </div>
-                        <div class="btn-holder"><a class="btn orange" href="#" title="title">ابدأ هنــا</a></div>
+                        <div class="btn-holder"><a class="btn orange" title="title" onClick={toggle}>ابدأ هنــا</a></div>
                     </div>
                 </div>
                 <div class="testimonial-section-img img-holderfeature-main-box"><img
