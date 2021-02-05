@@ -33,28 +33,28 @@ export default function Home() {
     <section class="header-section">
         <div class="container">
             <div class="header-box">
-                <div class="header-logo-box">
-                    <div class="menu-bar-box">
-                        <div class="menu-bar" id="mobilemenutrigger">
-                            <span></span><span></span><span></span><span></span></div>
-                    </div>
-                    <div class="header-logo"><Link href="/"><a title="Home-Bonat"><img src="img/logo.svg" alt="" /></a></Link></div>
-                </div>
-                <div class="header-menu-box">
-                    <div class="header-menu">
-                        <HeaderMenu />
-                    </div>
-                </div>
                 <div class="header-demo-box">
-                    <div class="header-demo">
-                        <Popup />
-                    </div>
-
                     <div class="header-lang">
                         <ul>
                             <li><Link href="/ar"><a title="title"><span class="imgicon messagebox"></span><span
                                         class="text">العربيــة</span></a></Link></li>
                         </ul>
+                    </div>
+                    <div class="header-demo">
+                        <Popup />
+                    </div>
+                </div>
+                
+                <div class="header-menu-box">
+                    <div class="header-menu">
+                        <HeaderMenu />
+                    </div>
+                </div>
+                <div class="header-logo-box">
+                    <div class="header-logo"><Link href="/"><a title="Home-Bonat"><img src="img/logo.svg" alt="" /></a></Link></div>
+                    <div class="menu-bar-box">
+                        <div class="menu-bar" id="mobilemenutrigger">
+                            <span></span><span></span><span></span><span></span></div>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
     </section>
     {/* <!-- BANNER TECHNOLOGY GROUP SECTION ENDS--> */}
     {/* <!-- WHY CHOOSE US SECTION STARTS--> */}
-    <section class="whychooseus-section">
+    <section class="whychooseus-section" id="loyality_programme">
         <div class="waves-bg"></div>
         <div class="bg-circle"></div>
         <div class="bg-small-dot-1"></div>

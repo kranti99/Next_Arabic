@@ -19,7 +19,7 @@ const ModalExample = (props) => {
         <ModalHeader toggle={toggle}>
         </ModalHeader>
         <ModalBody>
-          <section class="popup-section">
+          <section class="popup-section" style={{direction:"rtl"}}>
               <div class="popup-section-header">
                   <div class="popup-section-logo">
                       <img src="../img/logo.svg" alt=""/>

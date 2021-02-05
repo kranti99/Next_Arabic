@@ -4732,7 +4732,6 @@ span.imgicon.twitter {
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
   grid-gap: 130px;
-  direction: rtl;
   height: 100%;
   padding-bottom: 50px;
 }
@@ -5029,6 +5028,30 @@ span.imgicon.twitter {
   .popup-section-form {
     grid-column-gap: 90px;
     grid-row-gap: 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .feature-main-item-box {
+    grid-gap: 50px;
+  }
+  .feature-main-item-img img {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .feature-main-item-box::before {
+    right: 10px;
+  }
+  .feature-main-item-box .feature-main-item::before,
+  .feature-main-item-box .feature-main-item::after {
+    right: 0;
+  }
+  .feature-main-item-box .feature-main-item::after {
+    right: 5px;
+  }
+  .feature-main-item-box .feature-main-item {
+    padding: 0 50px 0 50px;
   }
 }
 /*# sourceMappingURL=popup.css.map */

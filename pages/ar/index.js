@@ -37,7 +37,7 @@ export default function Home() {
                         <div class="menu-bar" id="mobilemenutrigger">
                             <span></span><span></span><span></span><span></span></div>
                     </div>
-                    <div class="header-logo"><Link href="/"><a title="Home-Bonat"><img src="img/logo.svg" alt="" /></a></Link></div>
+                    <div class="header-logo"><Link href="/ar"><a title="Home-Bonat"><img src="img/logo.svg" alt="" /></a></Link></div>
                 </div>
                 <div class="header-menu-box">
                     <div class="header-menu">
@@ -138,7 +138,7 @@ export default function Home() {
     </section>
     {/* <!-- BANNER TECHNOLOGY GROUP SECTION ENDS--> */}
     {/* <!-- WHY CHOOSE US SECTION STARTS--> */}
-    <section class="whychooseus-section">
+    <section class="whychooseus-section" id="loyality_programme_ar">
         <div class="waves-bg"></div>
         <div class="bg-circle"></div>
         <div class="bg-small-dot-1"></div>
