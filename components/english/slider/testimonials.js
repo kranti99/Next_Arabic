@@ -20,17 +20,16 @@ export default (props) => {
           <div className="keen-slider__slide number-slide1">
                 <div class="testimonial-item">
                     <div class="testimonial-desription">
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                            النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                            زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
+                        <p>Bonat provided to us a company a valuable service to better understand our target market, 
+                          enabling us to improve our customer outreach easily.</p>
                     </div>
                     <div class="testimonial-person">
-                        <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
+                        <div class="test-icon"><img src="img/testimonial1.png" alt="" /></div>
                         <div class="test-text-box">
                             <div class="test-title">
-                                <h6>محمد بن خالد الاميري</h6>
+                                <h6>EiHĀ Coffee</h6>
                             </div>
-                            <div class="test-span"><span>Breath Coffee</span></div>
+                            <div class="test-span"><span></span></div>
                         </div>
                     </div>
                 </div>
@@ -38,17 +37,17 @@ export default (props) => {
           <div className="keen-slider__slide number-slide2">
                 <div class="testimonial-item">
                     <div class="testimonial-desription">
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                            النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                            زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
+                        <p>After using Bonat we learned who is our loyal customer. 
+                          I recommend coffee shops owners to get Bonat to better understand your customers and
+                           their behaviour which will increase sales.</p>
                     </div>
                     <div class="testimonial-person">
-                        <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
+                        <div class="test-icon"><img src="img/testimonial2.png" alt="" /></div>
                         <div class="test-text-box">
                             <div class="test-title">
-                                <h6>محمد بن خالد الاميري</h6>
+                                <h6>Milk Park</h6>
                             </div>
-                            <div class="test-span"><span>Breath Coffee</span></div>
+                            <div class="test-span"><span></span></div>
                         </div>
                     </div>
                 </div>
@@ -56,57 +55,21 @@ export default (props) => {
           <div className="keen-slider__slide number-slide3">
                 <div class="testimonial-item">
                     <div class="testimonial-desription">
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                            النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                            زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
+                        <p>Using Bonat we can understand our customer’s needs.
+                           It also helped reaching our customers in a fast and easy way. Thanks Bonat! </p>
                     </div>
                     <div class="testimonial-person">
-                        <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
+                        <div class="test-icon"><img src="img/testimonial3.png" alt="" /></div>
                         <div class="test-text-box">
                             <div class="test-title">
-                                <h6>محمد بن خالد الاميري</h6>
+                                <h6>Yamm Coffee Roasters</h6>
                             </div>
-                            <div class="test-span"><span>Breath Coffee</span></div>
+                            <div class="test-span"><span></span></div>
                         </div>
                     </div>
                 </div>
           </div>
-          <div className="keen-slider__slide number-slide4">
-                <div class="testimonial-item">
-                    <div class="testimonial-desription">
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                            النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                            زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
-                    </div>
-                    <div class="testimonial-person">
-                        <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
-                        <div class="test-text-box">
-                            <div class="test-title">
-                                <h6>محمد بن خالد الاميري</h6>
-                            </div>
-                            <div class="test-span"><span>Breath Coffee</span></div>
-                        </div>
-                    </div>
-                </div>
-          </div>
-          <div className="keen-slider__slide number-slide5">
-                <div class="testimonial-item">
-                    <div class="testimonial-desription">
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                            النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
-                            زيادة عدد الحروف التى يولدها التطبيق.غوية</p>
-                    </div>
-                    <div class="testimonial-person">
-                        <div class="test-icon"><img src="img/testimonial-img.png" alt="" /></div>
-                        <div class="test-text-box">
-                            <div class="test-title">
-                                <h6>محمد بن خالد الاميري</h6>
-                            </div>
-                            <div class="test-span"><span>Breath Coffee</span></div>
-                        </div>
-                    </div>
-                </div>
-          </div>
+          
         </div>
         {slider && (
           <>

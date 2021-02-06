@@ -241,49 +241,50 @@ export default function Home() {
                     </div>
                 </div>
                 <div class="whychooseus-item-box">
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item">
+                        <a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem1.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>An advanced system that collects real customers visits feedback</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem2.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem3.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem4.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem5.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem6.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem7.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="img/wcitem8.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>Smart customer segmentation to further understand customers' behavior</h6>
@@ -388,7 +389,7 @@ export default function Home() {
             </div>
         </div>
         <div class="feature-journey-section">
-            <div class="journey-box">
+            <div class="journey-box journey-box-en" style={{direction:"ltr"}}>
                 <div class="journey-text-box">
                     <div class="journey-title-box">
                         <div class="title">
@@ -398,7 +399,6 @@ export default function Home() {
                             <p class="colorange">Simple one step regestration and easy earning automated system</p>
                         </div>
                     </div>
-                    <div class="btn-holder"><a class="btn orange" href="#" title="">اطلب التجربة</a></div>
                 </div>
                 <div class="journey-item-box">
                     <div class="journey-item">

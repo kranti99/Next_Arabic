@@ -894,6 +894,12 @@ span.imgicon.twitter {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  cursor: pointer;
+  padding: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.menu-bar-box:hover {
+  transform: rotate(90deg); /* Equal to rotateZ(45deg) */
 }
 .menu-bar-box .menu-bar {
   display: -ms-grid;
@@ -2370,6 +2376,7 @@ span.imgicon.twitter {
   width: 75px;
   height: 75px;
   background: #202331;
+  cursor: pointer;
 }
 .mobile-menu-section .mobile-menu-holder .mobile-menu-close::before,
 .mobile-menu-section .mobile-menu-holder .mobile-menu-close::after {
@@ -3671,6 +3678,9 @@ span.imgicon.twitter {
     transform: translateX(-50%);
     width: 48%;
     height: 37px;
+  }
+  .journey-box-en .journey-item-box::before {
+    transform: rotate(180deg) translateX(50%);
   }
   .journey-item-box .journey-item {
     -ms-grid-rows: auto 1fr;

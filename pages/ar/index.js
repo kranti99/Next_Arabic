@@ -230,49 +230,49 @@ export default function Home() {
                     </div>
                 </div>
                 <div class="whychooseus-item-box">
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem1.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>تحليل دقيق لبيانات العملاء</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem2.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>تقارير مفصلة لفهم العائد عن الاستثمار</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem3.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>تقسيم ذكي لشرائح العملاء لفهم سلوك العميل</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem4.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>تحليل دقيق لآراء العملاء الحقيقيين</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem5.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>متجر بونات لشراء القسائم</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem6.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>بناء العلاقات الفعالة مع العملاء عن بالهدايا والرسائل</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem7.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>الطلب المسبق من المتجر</h6>
                             </div>
                         </a></div>
-                    <div class="whychooseus-item"><a href="#" title="">
+                    <div class="whychooseus-item"><a title="">
                             <div class="whychooseus-item-img"><img src="../img/wcitem8.svg" alt="" /></div>
                             <div class="whychooseus-item-title">
                                 <h6>تقديم عروض ترويجية خاصة بالعملاء وفي مناسباتهم الخاصة</h6>
@@ -351,20 +351,22 @@ export default function Home() {
                         <div class="feature-main-item-box">
                             <div class="feature-main-item" onMouseOver={changeBackground1}>
                                 <div class="title">
-                                    <h5>لوحة تحكم سهلة الاستخدام</h5>
-                                </div>
-                                <div class="description">
-                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                        النص العربى</p>
+                                    <h5>لوحة بيانات سهلة الاستخدام</h5>
                                 </div>
                             </div>
                             <div class="feature-main-item" onMouseOver={changeBackground2}>
                                 <div class="title">
-                                    <h5>تحليل بيانات دقيقة</h5>
+                                    <h5>تحليل دقيق للبيانات</h5>
                                 </div>
-                                <div class="description">
-                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                        النص العربى</p>
+                            </div>
+                            <div class="feature-main-item" onMouseOver={changeBackground3}>
+                                <div class="title">
+                                    <h5>تقارير تفصيلية</h5>
+                                </div>
+                            </div>
+                            <div class="feature-main-item" onMouseOver={changeBackground4}>
+                                <div class="title">
+                                    <h5>أدوات تسويق مؤتمتة</h5>
                                 </div>
                             </div>
                         </div>
@@ -383,7 +385,6 @@ export default function Home() {
                             <p class="colorange">تسجيل سريع واحتساب نقاط مؤتمت وسهل</p>
                         </div>
                     </div>
-                    <div class="btn-holder"><a class="btn orange" href="#" title="">اطلب التجربة</a></div>
                 </div>
                 <div class="journey-item-box">
                     <div class="journey-item">

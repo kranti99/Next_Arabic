@@ -2,7 +2,7 @@ import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
-export default (props) => {
+const Partner = (props) => {
   const [pause, setPause] = React.useState(false)
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
@@ -41,24 +41,25 @@ export default (props) => {
   return (
     <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1">    
-            <a href="#" title=""><img src="img/googlelogo.png" alt="" /></a>
+            <a title=""><img src="img/goodics.png" alt="" /></a>
         </div>
         <div className="keen-slider__slide number-slide2">    
-            <a href="#" title=""><img src="img/microsoftlogo.png" alt="" /></a>
+            <a title=""><img src="img/square.png" alt="" /></a>
         </div>
         <div className="keen-slider__slide number-slide3">    
-            <a href="#" title=""><img src="img/facebooklogo.png" alt="" /></a>
+            <a title=""><img src="img/marn.png" alt="" /></a>
         </div>
         <div className="keen-slider__slide number-slide4">    
-            <a href="#" title=""><img src="img/amazonlogo.png" alt="" /></a>
+            <a title=""><img src="img/ratmpos.png" alt="" /></a>
         </div>
         <div className="keen-slider__slide number-slide5">    
-            <a href="#" title=""><img src="img/slacklogo.png" alt="" /></a>
+            <a title=""><img src="img/revel.png" alt="" /></a>
         </div>
         <div className="keen-slider__slide number-slide3">    
-            <a href="#" title=""><img src="img/facebooklogo.png" alt="" /></a>
+            <a title=""><img src="img/ignite.png" alt="" /></a>
         </div>
         
       </div>
   )
 }
+export default Partner
