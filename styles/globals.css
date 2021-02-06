@@ -25,6 +25,9 @@
   -webkit-mask-size: contain;
   background: #ff6846; */
 }
+.navigation-wrapper-ar .arrow {
+  left: 15px;
+}
 .testimonial-section-main .arrow--left {
   bottom: 60px;
 }

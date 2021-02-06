@@ -15,10 +15,10 @@ export default (props) => {
 
   return (
     <>
-      <div className="navigation-wrapper">
+      <div className="navigation-wrapper navigation-wrapper-ar">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1">
-                <div class="testimonial-item">
+                <div class="testimonial-item" style={{direction:"rtl"}}>
                     <div class="testimonial-desription">
                         <p>بونات من البرامج التي قدمت خدمه عظيمه لنا كشركة في فهم شريحتنا المستهدفة والعمل على تحسين جودة التواصل مع العملاء وحل مشاكلهم بكل سهوله. </p>
                     </div>
@@ -34,7 +34,7 @@ export default (props) => {
                 </div>
           </div>
           <div className="keen-slider__slide number-slide2">
-                <div class="testimonial-item">
+                <div class="testimonial-item" style={{direction:"rtl"}}>
                     <div class="testimonial-desription">
                         <p>بعد استخدامي لبونات اصبحت اعرف تفاصيل عميلي المثالي بكل سهولة. انصح كل صاحب كوفي يكون عنده نظام بونات لان من خلاله راح تفهم عميلك وتفهم سلوكه وتزيد مبيعاتك. </p>
                     </div>
@@ -50,7 +50,7 @@ export default (props) => {
                 </div>
           </div>
           <div className="keen-slider__slide number-slide3">
-                <div class="testimonial-item">
+                <div class="testimonial-item" style={{direction:"rtl"}}>
                     <div class="testimonial-desription">
                         <p>من خلال بونات قدرت افهم عميلي أكثر وافهم متطلباته واحتياجاته ايضاً بونات ساعدني اوصل لعميلي بشكل أسرع وأسهل. شكراً بونات  </p>
                     </div>
@@ -65,6 +65,8 @@ export default (props) => {
                     </div>
                 </div>
           </div>
+
+          
           
         </div>
         {slider && (

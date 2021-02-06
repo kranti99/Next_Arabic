@@ -508,7 +508,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-section-main">
+                <div class="testimonial-section-main" style={{direction:"ltr"}}>
                     <Testimonials />
                 </div>
                 <div class="testimonial-section-info">
