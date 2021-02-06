@@ -1889,7 +1889,6 @@ span.imgicon.twitter {
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
   grid-gap: 2.5rem;
-  direction: rtl;
 }
 .testimonial-item .testimonial-desription * {
   font-size: var(--fs20);
