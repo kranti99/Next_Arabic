@@ -859,8 +859,12 @@ span.imgicon.twitter {
   background: #fff;
   padding: 20px 0;
   direction: rtl;
-  -webkit-box-shadow: 0 1px 0 #f5f5f5;
+  -webkit-box-shadow: 0 1px 0 #f0efef;
   box-shadow: 0 1px 0 #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 }
 .header-box {
   display: -webkit-box;
@@ -1840,6 +1844,10 @@ span.imgicon.twitter {
 .testimonial-section {
   background: #202331;
 }
+.testimonial-section-ar .testimonial-section-holder::before {
+  right: -moz-calc(100% - 430px);
+  right: calc(100% - 430px);
+}
 .testimonial-section .container {
   padding: 0;
   width: 100%;
@@ -2682,7 +2690,7 @@ span.imgicon.twitter {
   align-items: center;
 }
 .faq-main-box {
-  margin: 100px 0 50px;
+  margin: 100px auto 50px;
 }
 .faq-button-box {
   display: -webkit-box;
@@ -3856,7 +3864,7 @@ span.imgicon.twitter {
     opacity: 0.3;
   }
   .testimonial-section-title {
-    padding: 80px 0 0 100px;
+    padding: 80px 100px 0 100px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
@@ -4643,7 +4651,7 @@ span.imgicon.twitter {
     padding: 85px 0 50px 0;
   }
   .faq-main-box {
-    margin: 175px 0 110px;
+    margin: 175px auto 110px;
   }
   .faq-section .bg-circle {
     width: 350px;

@@ -173,7 +173,7 @@ export default function Home() {
     {/* <!-- BANNER TECHNOLOGY GROUP SECTION STARTS--> */}
     <section class="twoholder">
         {/* <!-- BANNER SECTION STARTS--> */}
-        <section class="banner-section">
+        <section class="banner-section" id="home">
             <div class="banner-dots"></div>
             <div class="container">
                 <div class="banner-box">

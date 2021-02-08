@@ -45,7 +45,7 @@ const Accordion = () => {
                                       <h6>Call Us anytime</h6>
                                   </div>
                                   <div class="quick-contact-des">
-                                      <p>نحن متاحين للإجابة على كل <br />استفساراتك و اسئلتك</p>
+                                      <p>For any additional inquiries</p>
                                   </div>
                                   <div class="quick-contact-list">
                                       <ul>

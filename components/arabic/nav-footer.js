@@ -3,7 +3,7 @@ import Link from 'next/link'
 function FooterMenu() {
     return (
             <ul>
-                <li><Link href="/ar"><a href="#" title="title">الرئيسية</a></Link></li>
+                <li><Link href="/ar/#home"><a href="#" title="title">الرئيسية</a></Link></li>
                 
                 <li><Link href="/ar/#loyality_programme_ar"><a title="title">نظام الولاء</a></Link></li>
 

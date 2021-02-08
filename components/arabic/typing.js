@@ -6,10 +6,15 @@ class AnimatedTyping extends React.Component {
     return (
       <Typical
         // steps={['معدل تفاعل|',1000,'معدل تفاعل|', 1000]}
-        steps={[ 'معدل',
+        steps={[ 'تفاعل',
             1000,
-            'تفاعل|', 
-          1000]}
+            'الحفاظ', 
+          1000,
+            'ولاء',
+            1000,
+            'قيمة حياة',
+            1000
+        ]}
 
         loop={Infinity}
          wrapper="span"

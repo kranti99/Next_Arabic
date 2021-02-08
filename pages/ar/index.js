@@ -163,7 +163,7 @@ export default function Home() {
     {/* <!-- BANNER TECHNOLOGY GROUP SECTION STARTS--> */}
     <section class="twoholder">
         {/* <!-- BANNER SECTION STARTS--> */}
-        <section class="banner-section">
+        <section class="banner-section" id="home">
             <div class="banner-dots"></div>
             <div class="container">
                 <div class="banner-box">
@@ -495,7 +495,7 @@ export default function Home() {
     </section>
     {/* <!-- CUSTOMERS SECTION ENDS--> */}
     {/* <!-- TESTIMONIAL SECTION STARTS--> */}
-    <section class="testimonial-section" style={{direction:"rtl"}}>
+    <section class="testimonial-section testimonial-section-ar" style={{direction:"rtl"}}>
         <div class="container">
             <div class="testimonial-section-holder">
                 <div class="testimonial-section-title">
