@@ -1,9 +1,11 @@
 import HeaderMenu from '../../components/arabic/nav-header'
 import FooterMenu from '../../components/arabic/nav-footer'
-import Accordion from '../../components/arabic/accordions/accordion'
+// import Accordion from '../../components/arabic/accordions/accordion'
 
 import Popup from '../../components/arabic/popup'
 import Link from 'next/link'
+import Accordion from '../../components/english/accordions/faq'
+
 
 
 function contact_us() {
@@ -65,27 +67,114 @@ function contact_us() {
         </div>
     </section>
     {/* <!-- MOBILE MENU SECTION ENDS--> */}
-            {/* <!-- FAQ SECTION STARTS--> */}
-            <section class="faq-section">
-                <div class="bg-circle"></div>
-                    <div class="container">
-                        <div class="faq-section-box">
-                            <div class="faq-title-box">
-                                <div class="title">
-                                    <h3>الأسئلة الشائعة</h3>
+             {/* <!-- FAQ SECTION STARTS--> */}
+             <section class="faq-section" style={{direction:"rtl"}}>
+                            <div class="bg-circle"></div>
+                                <div class="container">
+                                    <div class="faq-section-box">
+                                        <div class="faq-title-box">
+                                            <div class="title">
+                                                <h3>الأسئلة الشائعة</h3>
+                                            </div>
+                                            <div class="description">
+                                                <p class="colorange">اكثر ما تم الاستفسار عنه في بونات</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="faq-main-box">
+
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title=" أرسل طلب تجربة من هنا وسيتم التواصل معك بأسرع وقت. كيف أجرب بونات؟">
+                                                        <p>أرسل طلب تجربة من هنا وسيتم التواصل معك بأسرع وقت.</p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder in">
+                                                <div class="faq-holder" style={{padding:"0px"}}>
+                                                            <Accordion title="كيف اشترك بالخدمة؟">
+                                                                <p>بعد طلب التجربة سيتواصل معك أحد ممثلي المبيعات لعرض الخدمة واستكمال إجراءات التجربة والاشتراك.</p>
+                                                            </Accordion>
+                                                        
+                                                            <Accordion title="ما هي آلية الاشتراك؟">
+                                                                <p>الاشتراك بالخدمة برسوم شهرية ولتفاصيل عن المدفوعات الرجاء التواصل معنا <a href="#">هنا</a></p>
+                                                            </Accordion>
+                                                            <Accordion title="هل يوجد تكاليف اخرى؟">
+                                                                <p>هناك تكلفة تدفع لمرة واحدة وتشمل الجهاز اللوحي وقاعدة للجهاز اللوحي والتدريب والتركيب. </p>
+                                                            </Accordion>
+                                                        
+                                                </div>
+                                                <div class="quick-contact" style={{marginright:"30px"}}>
+                                                    <div class="quick-contact-holder">
+                                                        <div class="quick-contact-icon"><img src="../img/quick-contact.svg" alt="" /></div>
+                                                        <div class="quick-contact-title">
+                                                            <h6>لا تتردد بالتواصل معنا</h6>
+                                                        </div>
+                                                        <div class="quick-contact-des">
+                                                            <p>لأي أسئلة او استفسارات اخرى</p>
+                                                        </div>
+                                                        <div class="quick-contact-list" style={{direction:"ltr"}}>
+                                                            <ul>
+                                                                <li><a href="#" title="title">+966(5) 587-3407</a></li>
+                                                                <li><a href="#" title="title">+966(5) 587-3407</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title="هل يوجد فترة تجربة؟">
+                                                        <p>نعم. يوجد شهر تجربة مستردة الرسوم.  </p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title="ماهي سياسة الاشتراك لأكثر من فرع؟">
+                                                        <p>يمكنك الاشتراك بعدد أفرع لا محدود ولكل فرع يضاف رسوم اضافية.</p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title="هل يوجد رسوم او عمولة على خدمة الطلب المسبق؟">
+                                                        <p>الخدمة مجانية ويخصم عمولة البنك فقط</p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title="هل يوجد رسوم او عمولة على عملية شراء القسائم من متجر بونات؟">
+                                                        <p>الخدمة مجانية ويخصم عمولة البنك فقط.</p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title="ما هي آلية المكافأة؟">
+                                                        <p>يمكنك التحكم بعدد المكافآت والنقاط لكل صنف من خلال لوحة التحكم الخاصة بك.</p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                            <div class="faq-div-holder">
+                                                <div class="faq-holder">
+                                                    <Accordion title="هل يمكن لمستخدمين متعددين استخدام لوحة التحكم؟">
+                                                        <p>نعم. يمكنك من خلال لوحة التحكم إضافة مستخدمين متعددين مثل: (مدير فرع, مدير التسويق, المحاسب الخ) وبصلاحيات مختلفة.</p>
+                                                    </Accordion>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="faq-button-box">
+                                            <Link href="../../contact_us"><a class="btn orange" title="title">Send Message</a></Link>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="description">
-                                    <p class="colorange">اكثر ما تم الاستفسار عنه في بونات</p>
-                                </div>
-                            </div>
-                            <Accordion />
-                            <div class="faq-button-box">
-                                <Link href="../../contact_us"><a class="btn orange" title="title">أرسل الرسالة</a></Link>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-    {/* <!-- FAQ SECTION ENDS-->                          */}
+                           
+                        </section>
+                {/* <!-- FAQ SECTION ENDS-->                          */}
             
 
              {/* <!-- FOOTER SECTION STARTS--> */}

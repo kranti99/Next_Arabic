@@ -36,7 +36,7 @@ const Accordion = () => {
                                 </>
                               );
                            })}
-                           </div>
+                          </div>
 
                            <div class="quick-contact" style={{marginright:"30px"}}>
                               <div class="quick-contact-holder">
@@ -55,7 +55,7 @@ const Accordion = () => {
                                   </div>
                               </div>
                           </div>
-                        </div>
+                      </div>
                     </div>
 
   );
