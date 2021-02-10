@@ -1,6 +1,5 @@
 import HeaderMenu from '../../components/arabic/nav-header'
 import FooterMenu from '../../components/arabic/nav-footer'
-// import Accordion from '../../components/arabic/accordions/accordion'
 
 import Popup from '../../components/arabic/popup'
 import Link from 'next/link'
