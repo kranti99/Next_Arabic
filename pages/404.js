@@ -1,6 +1,7 @@
 import HeaderMenu from '../components/english/nav-header'
 import FooterMenu from '../components/english/nav-footer'
 
+import Popup from '../components/english/popup'
 import Link from 'next/link'
 
 
