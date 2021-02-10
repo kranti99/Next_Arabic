@@ -3,7 +3,7 @@ import FooterMenu from '../components/english/nav-footer'
 
 import Popup from '../components/english/popup'
 import Link from 'next/link'
-import Accordion from '../components/english/accordions/faq'
+import Accordion from '../components/faq'
 
 
 function contact_us() {
@@ -167,7 +167,7 @@ function contact_us() {
 
 
                                         <div class="faq-button-box">
-                                            <Link href="../../contact_us"><a class="btn orange" title="title">Send Message</a></Link>
+                                            <Link href="/contact_us"><a class="btn orange" title="title">Contact Us</a></Link>
                                         </div>
                                     </div>
                                 </div>

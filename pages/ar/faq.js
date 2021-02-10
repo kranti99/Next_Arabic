@@ -4,7 +4,7 @@ import FooterMenu from '../../components/arabic/nav-footer'
 
 import Popup from '../../components/arabic/popup'
 import Link from 'next/link'
-import Accordion from '../../components/english/accordions/faq'
+import Accordion from '../../components/faq'
 
 
 
@@ -168,7 +168,7 @@ function contact_us() {
 
 
                                         <div class="faq-button-box">
-                                            <Link href="../../contact_us"><a class="btn orange" title="title">Send Message</a></Link>
+                                            <Link href="/ar/contact_us"><a class="btn orange" title="title"> تواصل معنا</a></Link>
                                         </div>
                                     </div>
                                 </div>

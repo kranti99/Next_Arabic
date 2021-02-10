@@ -88,8 +88,7 @@ function contact_us() {
                                         </div>
                                         <div class="contact-info-item-des">
                                             <ul>
-                                                <li><span>الرياض, المنطقة الصناعية, شارع الأمير فيصل بن عبد العزيز, عمارة الأمراء,
-                                                        الط45ابق</span></li>
+                                                <li><span>Office 16, 1st Floor, Tafaseel Center, Al Takhsussi St. Riyad</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -116,8 +115,7 @@ function contact_us() {
                                         </div>
                                         <div class="contact-info-item-des">
                                             <ul>
-                                                <li><a href="#" title="title">info@bonat.io</a></li>
-                                                <li><a href="#" title="title">sales@bonat.io</a></li>
+                                                <li><a href="#" title="title">Customercare@bonat.io</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -137,7 +135,7 @@ function contact_us() {
                                         <h3>Contact us</h3>
                                     </div>
                                     <div class="description">
-                                        <p class="colorange">Ready to ask your questions</p>
+                                        <p class="colorange">Ready to answer your questions</p>
                                     </div>
                                 </div>
                                 <div class="contact-form-item">
