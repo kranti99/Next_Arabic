@@ -562,23 +562,27 @@ export default function Home() {
                 </div>
                 <div class="footer-social-icon">
                     <ul>
-                        <li><a href="#" title="title"><span class="imgicon instagram"></span></a></li>
-                        <li><a href="#" title="title"><span class="imgicon twitter"></span></a></li>
-                        <li><a href="#" title="title"><span class="imgicon linkedin"></span></a></li>
-                        <li><a href="#" title="title"><span class="imgicon whatsapp"></span></a></li>
+                        <li><a href="https://www.instagram.com/getbonat/?hl=en" target="_blank"><span class="imgicon instagram"></span></a></li>
+                        <li><a href="https://twitter.com/getbonat?lang=en" target="_blank"><span class="imgicon twitter"></span></a></li>
+                        <li><a href="https://www.linkedin.com/company/getbonat/" target="_blank"><span class="imgicon linkedin"></span></a></li>
                     </ul>
                 </div>
                 <div class="footer-download">
-                    <div class="footer-download-item"><a href="#" title="title">
+                    <div class="footer-download-item">
+                        <a href="#" title="title">
                             <div class="fdown-icon"><img src="img/apple.svg" alt="" /></div>
-                            <div class="fdown-textbox"><span class="text1">حمل التطبيق الان</span><span
-                                    class="text2">أبل ستــــور</span></div>
-                        </a></div>
-                    <div class="footer-download-item"><a href="#" title="title">
+                            <div class="fdown-textbox"><span class="text1">Download on the</span><span
+                                    class="text2">App Store</span></div>
+                            {/* <img src="img/app-store.png" />     */}
+                        </a>
+                    </div>
+                    <div class="footer-download-item">
+                        <a href="#" title="title">
                             <div class="fdown-icon"><img src="img/playstore.svg" alt="" /></div>
-                            <div class="fdown-textbox"><span class="text1">حمل التطبيق الان</span><span
-                                    class="text2">جوجل بلاي</span></div>
-                        </a></div>
+                            <div class="fdown-textbox"><span class="text1">Android App on</span>
+                            <span class="text2">Google Play</span></div>
+                        </a>
+                    </div>
                 </div>
                 <div class="copyright-text"><span class="colorange">&copy; Bonat</span> Copyright 2020</div>
             </div>
