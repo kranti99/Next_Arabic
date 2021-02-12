@@ -15,16 +15,31 @@ const Popup = (props) => {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
-  const onSubmit =  (data)  => {
-      alert(JSON.stringify(data));
-      axios
-      .post('https://www.postman.com/collections/c7d197a4f68c3690e2b1', data)
-      .then(response => {
-          console.log(response)
-      })
-      .catch(error=> {
-        console.log(error)
-      })
+  async const onSubmit =  (data)  => {
+    //   axios
+    //   .post('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', JSON.stringify(data))
+    //   .then(response => {
+    //       console.log(response)
+    //   })
+    //   .catch(error=> {
+    //     console.log(error)
+    //   })
+    try{
+        const result = await fetch('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', {
+            method : 'post',
+            mode: 'no-cors',
+            headers: {
+                'Accept': 'application/json',
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        console.log(data)
+
+    }
+    catch(e){
+        console.log(e)
+    }
   }
 
   return (
