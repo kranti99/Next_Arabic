@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-// import axios from 'axios'
 
 const Popup = (props) => {
 
@@ -10,20 +9,17 @@ const Popup = (props) => {
     buttonLabel,
     className
   } = props;
-    const {register, handleSubmit} = useForm();
-
+    const {register, handleSubmit, errors} = useForm();
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
   const onSubmit =  (data)  => {
-      alert(JSON.stringify(data));
+      document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
       axios
       .post('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', JSON.stringify(data))
       .then(response => {
-          console.log(response)
       })
       .catch(error=> {
-        console.log(error)
       })
   }
 
@@ -47,6 +43,7 @@ const Popup = (props) => {
                       </div>
                   </div>
                   <div class="popup-section-formbox">
+                      <div class="successMsg"></div>
                       <form onSubmit={handleSubmit(onSubmit)}>
                           <div class="popup-section-form">
                             <div class="form-group">
@@ -61,10 +58,12 @@ const Popup = (props) => {
                             <div class="form-group">
                                 <select name="business_type" ref={register} class="form-control pop" required>
                                     <option value="" disabled selected hidden>Business Type *</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
+                                    <option value="Coffee Shop">Coffee Shop</option>
+                                    <option value="Bakery">Bakery</option>
+                                    <option value="Restaurant">Restaurant</option>
+                                    <option value="Retail">Retail</option>
+                                    <option value="Other">Other</option>
+
                                 </select>
                             </div>
                             <div class="form-group">
@@ -73,10 +72,13 @@ const Popup = (props) => {
                             <div class="form-group">
                                 <select name="pos_type" class="form-control pop" ref={register} required>
                                     <option value="" disabled selected hidden>POS Type *</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
+                                    <option value="Foodics">Foodics</option>
+                                    <option value="Odoo">Odoo</option>
+                                    <option value="Square">Square</option>
+                                    <option value="Marn">Marn</option>
+                                    <option value="Ratm">Ratm</option>
+                                    <option value="Omega">Omega</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -85,10 +87,11 @@ const Popup = (props) => {
                             <div class="form-group">
                                 <select name="know_how" class="form-control pop" ref={register}>
                                     <option value="" disabled selected hidden>How did you know about Bonat</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
+                                    <option value="Search Engine (Google, Bing…)">Search Engine (Google, Bing…)</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Linked In">Linked In</option>
+                                    <option value="Another business">Another business</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                         </div>

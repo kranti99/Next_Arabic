@@ -13,6 +13,8 @@ import AnimatedTyping from '../components/english/typing.js'
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 
 export default function Home() {
@@ -29,12 +31,20 @@ export default function Home() {
         document.querySelector('#TextHoverImage').src = '../img/feat-main-item-img.png';
     }
 
-    
-      
+
     const [modal, setModal] = useState(false);
-      
     const toggle = () => setModal(!modal);  
-    
+    const {register, handleSubmit, errors} = useForm();
+
+    const onSubmit =  (data)  => {
+        document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
+        axios
+        .post('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', JSON.stringify(data))
+        .then(response => {
+        })
+        .catch(error=> {
+        })
+    }
   return (
 
     <div className={styles.container}>
@@ -58,50 +68,76 @@ export default function Home() {
                       </div>
                   </div>
                   <div class="popup-section-formbox">
-                      <form class="popup-section-form" action="">
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* Full Name"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* Work Field"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* Mobile No"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* أدخل مجال العمل (في حال اختيار اخرى)"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* Email"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="*POS Type"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* Company"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* How did you know about Bonat"/>
-                          </div>
-                          <div class="form-group">
-                              <input class="form-control pop" type="text" placeholder="* City"/>
-                          </div>
+                  <div class="successMsg"></div>
+                  <form onSubmit={handleSubmit(onSubmit)}>
+                          <div class="popup-section-form">
+                            <div class="form-group">
+                                <input class="form-control pop" type="text" placeholder="Full Name *" name="full_name" ref={register} required/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control pop" type="text" placeholder="City *" name="city"  ref={register} required/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control pop" type="text" placeholder="Mobile No *" name="mobile_nu" ref={register} required/>
+                            </div>
+                            <div class="form-group">
+                                <select name="business_type" ref={register} class="form-control pop" required>
+                                    <option value="" disabled selected hidden>Business Type *</option>
+                                    <option value="Coffee Shop">Coffee Shop</option>
+                                    <option value="Bakery">Bakery</option>
+                                    <option value="Restaurant">Restaurant</option>
+                                    <option value="Retail">Retail</option>
+                                    <option value="Other">Other</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control pop" type="email" placeholder="Email" name="email" ref={register}/>
+                            </div>
+                            <div class="form-group">
+                                <select name="pos_type" class="form-control pop" ref={register} required>
+                                    <option value="" disabled selected hidden>POS Type *</option>
+                                    <option value="Foodics">Foodics</option>
+                                    <option value="Odoo">Odoo</option>
+                                    <option value="Square">Square</option>
+                                    <option value="Marn">Marn</option>
+                                    <option value="Ratm">Ratm</option>
+                                    <option value="Omega">Omega</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control pop" type="text" placeholder="Business Name *" name="business_name" ref={register} required/>
+                            </div>
+                            <div class="form-group">
+                                <select name="know_how" class="form-control pop" ref={register}>
+                                    <option value="" disabled selected hidden>How did you know about Bonat</option>
+                                    <option value="Search Engine (Google, Bing…)">Search Engine (Google, Bing…)</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Linked In">Linked In</option>
+                                    <option value="Another business">Another business</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="popup-section-submit">
+                                <button class="btn orange" type="submit">
+                                    Submit
+                                </button>
+                                <div class="popup-section-information">
+                                    <div class="info-text">
+                                        <span>Don’t hesitate to contact us if you have any questions</span>
+                                    </div>
+                                    <a class="info-btn" href="#">
+                                        <img src="img/whatsapp.svg" alt=""/>
+                                        <span class="text">Contact Us</span>
+                                    </a>
+                                </div>
+                            </div>
+                        
                       </form>
                   </div>
-                  <div class="popup-section-submit">
-                      <button class="btn orange" type="submit">
-                          Submit
-                      </button>
-                      <div class="popup-section-information">
-                          <div class="info-text">
-                              <span>اذا واجهتك مشكلة, لا تترد في التواصل معنا مباشرة</span>
-                          </div>
-                          <a class="info-btn" href="#">
-                              <img src="img/whatsapp.svg" alt=""/>
-                              <span class="text">تواصل معنا</span>
-                          </a>
-                      </div>
-                  </div>
+                 
               </div> 
           </section>
         </ModalBody>

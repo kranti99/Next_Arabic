@@ -4820,7 +4820,7 @@ span.imgicon.twitter {
   display: grid;
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
-  grid-gap: 60px;
+  grid-gap: 40px;
   padding: 0 15px;
 }
 .popup-section-title h3 {
@@ -4934,6 +4934,11 @@ span.imgicon.twitter {
   z-index: 1;
   cursor: pointer;
   background: #202331;
+}
+.successMsg {
+  padding-bottom: 30px;
+  font-size: 24px;
+  color: green;
 }
 .modal-content .close span {
   font-size: 30px;
