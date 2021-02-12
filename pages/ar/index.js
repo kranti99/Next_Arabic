@@ -35,7 +35,7 @@ export default function Home() {
     const onSubmit =  (data)  => {
         document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
         axios
-        .post('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', JSON.stringify(data))
+        .post('https://www.postman.com/collections/c7d197a4f68c3690e2b1', JSON.stringify(data))
         .then(response => {
         })
         .catch(error=> {

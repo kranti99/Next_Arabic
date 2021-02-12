@@ -16,7 +16,7 @@ const Popup = (props) => {
   const onSubmit =  (data)  => {
       document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
       axios
-      .post('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', JSON.stringify(data))
+      .post('https://www.postman.com/collections/c7d197a4f68c3690e2b1', JSON.stringify(data))
       .then(response => {
       })
       .catch(error=> {
@@ -53,7 +53,7 @@ const Popup = (props) => {
                                 <input class="form-control pop" type="text" placeholder="City *" name="city"  ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <input class="form-control pop" type="text" placeholder="Mobile No *" name="mobile_nu" ref={register} required/>
+                                <input class="form-control pop" type="number" placeholder="Mobile No *" name="mobile_nu" ref={register} required/>
                             </div>
                             <div class="form-group">
                                 <select name="business_type" ref={register} class="form-control pop" required>
