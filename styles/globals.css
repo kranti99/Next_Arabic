@@ -3599,8 +3599,8 @@ span.imgicon.twitter {
     padding-bottom: 80px;
   }
   .feature-section .container {
-    width: var(--cont);
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 100px;
   }
   .feature-section > div {
     position: relative;
@@ -4676,7 +4676,7 @@ span.imgicon.twitter {
 }
 .modal {
   position: fixed;
-  top: 0%;
+  top: 0;
   left: 0;
   z-index: 1050;
   display: none;
@@ -4693,6 +4693,7 @@ span.imgicon.twitter {
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
+  top: 10%;
 }
 .modal.show .modal-dialog {
   -webkit-transform: none;
@@ -4741,7 +4742,10 @@ span.imgicon.twitter {
   outline: 0;
 }
 .modal-header {
-  margin-top: 45px;
+  /* margin-top: 45px; */
+  position: absolute;
+  top: 0;
+  z-index: 999 !important;
 }
 /* call to action css start*/
 .popup-section {
@@ -4753,7 +4757,7 @@ span.imgicon.twitter {
   grid-auto-rows: min-content;
   grid-gap: 130px;
   height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 .popup-section::before {
   position: absolute;
@@ -4806,7 +4810,7 @@ span.imgicon.twitter {
   margin-right: 5px;
   position: absolute;
   right: 15px;
-  top: 0px;
+  top: 25px;
 }
 .popup-section-logo img {
   max-width: 100px;
@@ -4841,6 +4845,7 @@ span.imgicon.twitter {
   -ms-flex-align: center;
   align-items: center;
   grid-gap: 5px;
+  margin-top: 60px;
 }
 .popup-section-submit .btn {
   height: 100%;
