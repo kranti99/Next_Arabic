@@ -8,7 +8,7 @@ import HeaderMenu from '../components/english/nav-header'
 import FooterMenu from '../components/english/nav-footer'
 import Partner from '../components/english/slider/partner'
 import Testimonials from '../components/english/slider/testimonials'
-// import Popup from '../components/english/popup'
+import Popup from '../components/english/popup'
 import AnimatedTyping from '../components/english/typing.js'
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
@@ -124,7 +124,7 @@ export default function Home() {
                         </ul>
                     </div>
                     <div class="header-demo">
-                        {/* <Popup /> */}
+                        <Popup />
 
                     </div>
                 </div>
