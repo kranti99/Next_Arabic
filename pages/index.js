@@ -72,16 +72,16 @@ export default function Home() {
                   <form onSubmit={handleSubmit(onSubmit)}>
                           <div class="popup-section-form">
                             <div class="form-group">
-                                <input class="form-control pop" type="text" placeholder="Full Name *" name="full_name" ref={register} required/>
+                                <input class="form-control pop" type="text" placeholder="Full Name *" name="fullname" ref={register} required/>
                             </div>
                             <div class="form-group">
                                 <input class="form-control pop" type="text" placeholder="City *" name="city"  ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <input class="form-control pop" type="number" placeholder="Mobile No *" name="mobile_nu" ref={register} required/>
+                                <input class="form-control pop" type="number" placeholder="Mobile No *" name="phone" ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <select name="business_type" ref={register} class="form-control pop" required>
+                                <select name="business" ref={register} class="form-control pop" required>
                                     <option value="" disabled selected hidden>Business Type *</option>
                                     <option value="Coffee Shop">Coffee Shop</option>
                                     <option value="Bakery">Bakery</option>
@@ -95,7 +95,7 @@ export default function Home() {
                                 <input class="form-control pop" type="email" placeholder="Email" name="email" ref={register}/>
                             </div>
                             <div class="form-group">
-                                <select name="pos_type" class="form-control pop" ref={register} required>
+                                <select name="POS" class="form-control pop" ref={register} required>
                                     <option value="" disabled selected hidden>POS Type *</option>
                                     <option value="Foodics">Foodics</option>
                                     <option value="Odoo">Odoo</option>
@@ -107,10 +107,10 @@ export default function Home() {
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input class="form-control pop" type="text" placeholder="Business Name *" name="business_name" ref={register} required/>
+                                <input class="form-control pop" type="text" placeholder="Business Name *" name="company" ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <select name="know_how" class="form-control pop" ref={register}>
+                                <select name="knewus" class="form-control pop" ref={register}>
                                     <option value="" disabled selected hidden>How did you know about Bonat</option>
                                     <option value="Search Engine (Google, Bing…)">Search Engine (Google, Bing…)</option>
                                     <option value="Social Media">Social Media</option>

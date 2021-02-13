@@ -49,16 +49,16 @@ const Popup = (props) => {
                       <form onSubmit={handleSubmit(onSubmit)}>
                           <div class="popup-section-form">
                             <div class="form-group">
-                                <input class="form-control pop" type="text" placeholder="الاسم بالكامل *" name="full_name" ref={register} required/>
+                                <input class="form-control pop" type="text" placeholder="الاسم بالكامل *" name="fullname" ref={register} required/>
                             </div>
                             <div class="form-group">
                                 <input class="form-control pop" type="text" placeholder="المدينة *" name="city"  ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <input class="form-control pop" type="number" placeholder="رقم الجوال *" name="mobile_nu" ref={register} required/>
+                                <input class="form-control pop" type="number" placeholder="رقم الجوال *" name="phone" ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <select name="business_type" ref={register} class="form-control pop" required>
+                                <select name="business" ref={register} class="form-control pop" required>
                                     <option value="" disabled selected hidden>اسم المنشأة *</option>
                                     <option value="Coffee Shop">Coffee Shop</option>
                                     <option value="Bakery">Bakery</option>
@@ -72,7 +72,7 @@ const Popup = (props) => {
                                 <input class="form-control pop" type="email" placeholder="البريد الالكتروني" name="email" ref={register}/>
                             </div>
                             <div class="form-group">
-                                <select name="pos_type" class="form-control pop" ref={register} required>
+                                <select name="POS" class="form-control pop" ref={register} required>
                                     <option value="" disabled selected hidden>نوع نظام المحاسبة *</option>
                                     <option value="Foodics">Foodics</option>
                                     <option value="Odoo">Odoo</option>
@@ -84,10 +84,10 @@ const Popup = (props) => {
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input class="form-control pop" type="text" placeholder="Business Name *" name="business_name" ref={register} required/>
+                                <input class="form-control pop" type="text" placeholder="Business Name *" name="company" ref={register} required/>
                             </div>
                             <div class="form-group">
-                                <select name="know_how" class="form-control pop" ref={register}>
+                                <select name="knewus" class="form-control pop" ref={register}>
                                     <option value="" disabled selected hidden>كيف سمعت عن بونات</option>
                                     <option value="Search Engine (Google, Bing…)">Search Engine (Google, Bing…)</option>
                                     <option value="Social Media">Social Media</option>
