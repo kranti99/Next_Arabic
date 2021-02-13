@@ -64,11 +64,11 @@ function Faq() {
                             <div class="form-group">
                                 <select name="business" ref={register} class="form-control pop" required>
                                     <option value="" disabled selected hidden>اسم المنشأة *</option>
-                                    <option value="Coffee Shop">Coffee Shop</option>
-                                    <option value="Bakery">Bakery</option>
-                                    <option value="Restaurant">Restaurant</option>
-                                    <option value="Retail">Retail</option>
-                                    <option value="Other">Other</option>
+                                    <option value="Coffee Shop">مقهى</option>
+                                    <option value="Bakery">مخبوزات</option>
+                                    <option value="Restaurant">مطعم</option>
+                                    <option value="Retail">تجزئة</option>
+                                    <option value="Other">أخرى</option>
 
                                 </select>
                             </div>
@@ -78,13 +78,13 @@ function Faq() {
                             <div class="form-group">
                                 <select name="POS" class="form-control pop" ref={register} required>
                                     <option value="" disabled selected hidden>نوع نظام المحاسبة *</option>
-                                    <option value="Foodics">Foodics</option>
-                                    <option value="Odoo">Odoo</option>
-                                    <option value="Square">Square</option>
-                                    <option value="Marn">Marn</option>
-                                    <option value="Ratm">Ratm</option>
-                                    <option value="Omega">Omega</option>
-                                    <option value="Other">Other</option>
+                                    <option value="Foodics">فوديكس</option>
+                                    <option value="Odoo">أوودو</option>
+                                    <option value="Square">سكوير</option>
+                                    <option value="Marn">مرن</option>
+                                    <option value="Ratm">رتم</option>
+                                    <option value="Omega">أوميغا</option>
+                                    <option value="Other">أخرى</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -93,11 +93,11 @@ function Faq() {
                             <div class="form-group">
                                 <select name="knewus" class="form-control pop" ref={register}>
                                     <option value="" disabled selected hidden>كيف سمعت عن بونات</option>
-                                    <option value="Search Engine (Google, Bing…)">Search Engine (Google, Bing…)</option>
-                                    <option value="Social Media">Social Media</option>
-                                    <option value="Linked In">Linked In</option>
-                                    <option value="Another business">Another business</option>
-                                    <option value="Other">Other</option>
+                                    <option value="Search Engine (Google, Bing…)">محرك بحث (جووجل, بينج..)</option>
+                                    <option value="Social Media">التواصل الاجتماعي</option>
+                                    <option value="Linked In">لينكد إن</option>
+                                    <option value="Another business">من منشأة أخرى</option>
+                                    <option value="Other">أخرى</option>
                                 </select>
                             </div>
                         </div>
@@ -210,11 +210,11 @@ function Faq() {
                                             <div class="faq-div-holder in">
                                                 <div class="faq-holder" style={{padding:"0px"}}>
                                                             <Accordion title="كيف اشترك بالخدمة؟">
-                                                                <p>بعد طلب التجربة سيتواصل معك أحد ممثلي المبيعات لعرض الخدمة واستكمال إجراءات التجربة والاشتراك.</p>
+                                                                <p>بعد طلب التجربة سيتواصل معك أحد ممثلي المبيعات لعرض الخدمة واستكمال إجراءات  التجربة والاشتراك.</p>
                                                             </Accordion>
                                                         
                                                             <Accordion title="ما هي آلية الاشتراك؟">
-                                                                <p>الاشتراك بالخدمة برسوم شهرية ولتفاصيل عن المدفوعات الرجاء التواصل معنا <a href="#">هنا</a></p>
+                                                                <p>الاشتراك بالخدمة برسوم شهرية ولتفاصيل عن المدفوعات الرجاء التواصل معنا <a href="#" onClick={toggle}>هنا</a></p>
                                                             </Accordion>
                                                             <Accordion title="هل يوجد تكاليف اخرى؟">
                                                                 <p>هناك تكلفة تدفع لمرة واحدة وتشمل الجهاز اللوحي وقاعدة للجهاز اللوحي والتدريب والتركيب. </p>

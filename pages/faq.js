@@ -33,7 +33,7 @@ function contact_us() {
         <ModalHeader toggle={toggle}>
         </ModalHeader>
         <ModalBody>
-          <section class="popup-section" style={{direction:"rtl"}}>
+          <section class="popup-section">
               <div class="popup-section-header">
                   <div class="popup-section-logo">
                       <img src="../img/logo.svg" alt=""/>
@@ -200,18 +200,18 @@ function contact_us() {
                                             <div class="faq-div-holder">
                                                 <div class="faq-holder">
                                                     <Accordion title="How can I try Bonat?">
-                                                        <p>You can request a demo from <a href="#">here</a> and our team will reach out to you.</p>
+                                                        <p>You can request a demo from <a href="#" onClick={toggle}>here</a> and our team will reach out to you.</p>
                                                     </Accordion>
                                                 </div>
                                             </div>
                                             <div class="faq-div-holder in">
                                                 <div class="faq-holder">
                                                             <Accordion title="How can I subscribe to Bonat?">
-                                                                <p>Request a demo from <a href="#">here </a>and our team will contact you to complete the subscription process.</p>
+                                                                <p>Request a demo from <a href="#" onClick={toggle}>here </a>and our team will contact you to complete the subscription process.</p>
                                                             </Accordion>
                                                         
                                                             <Accordion title="How is Bonat Priced?">
-                                                                <p>Bonat subscription is a fixed monthly fee, for payment information please contact us <a href="#">here.</a></p>
+                                                                <p>Bonat subscription is a fixed monthly fee, for payment information please contact us <a href="#"  onClick={toggle}>here.</a></p>
                                                             </Accordion>
                                                             <Accordion title="Are there other expenses?">
                                                                 <p>There is a onetime payment which includes tablet, stand, charger, establishment, and training. </p>

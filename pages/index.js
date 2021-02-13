@@ -424,50 +424,52 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div class="feature-journey-section">
-            <div class="journey-box journey-box-en" style={{direction:"ltr"}}>
-                <div class="journey-text-box">
-                    <div class="journey-title-box">
-                        <div class="title">
-                            <h3>Easy customer journey with Bonat</h3>
-                        </div>
-                        <div class="description">
-                            <p class="colorange">Simple one step regestration and easy earning automated system</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="journey-item-box">
-                    <div class="journey-item">
-                        <div class="journey-item-img-box"><img src="img/journeyimg1.svg" alt="" /></div>
+        <div class="container">
+            <div class="feature-journey-section">
+                <div class="journey-box journey-box-en" style={{direction:"ltr"}}>
+                    <div class="journey-text-box">
                         <div class="journey-title-box">
                             <div class="title">
-                                <h5>Regestration</h5>
+                                <h3>Easy customer journey with Bonat</h3>
                             </div>
                             <div class="description">
-                                <p>in one step, using your mobile <br />number</p>
+                                <p class="colorange">Simple one step regestration and easy earning automated system</p>
                             </div>
                         </div>
                     </div>
-                    <div class="journey-item">
-                        <div class="journey-item-img-box"><img src="img/journeyimg2.svg" alt="" /></div>
-                        <div class="journey-title-box">
-                            <div class="title">
-                                <h5>Purchase</h5>
-                            </div>
-                            <div class="description">
-                                <p>Automated points calculation in <br />conjunction with bill issuance</p>
+                    <div class="journey-item-box">
+                        <div class="journey-item">
+                            <div class="journey-item-img-box"><img src="img/journeyimg1.svg" alt="" /></div>
+                            <div class="journey-title-box">
+                                <div class="title">
+                                    <h5>Regestration</h5>
+                                </div>
+                                <div class="description">
+                                    <p>in one step, using your mobile <br />number</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="journey-item">
-                        <div class="journey-item-img-box"><img src="img/journeyimg3.svg" alt="" /></div>
-                        <div class="journey-title-box">
-                            <div class="title">
-                                <h5>Reward</h5>
+                        <div class="journey-item">
+                            <div class="journey-item-img-box"><img src="img/journeyimg2.svg" alt="" /></div>
+                            <div class="journey-title-box">
+                                <div class="title">
+                                    <h5>Purchase</h5>
+                                </div>
+                                <div class="description">
+                                    <p>Automated points calculation in <br />conjunction with bill issuance</p>
+                                </div>
                             </div>
-                            <div class="description">
-                                <p>A simple collect process by <br /> adding redeemed reward code to<br /> the tablet in
-                                    front of the cashier</p>
+                        </div>
+                        <div class="journey-item">
+                            <div class="journey-item-img-box"><img src="img/journeyimg3.svg" alt="" /></div>
+                            <div class="journey-title-box">
+                                <div class="title">
+                                    <h5>Reward</h5>
+                                </div>
+                                <div class="description">
+                                    <p>A simple collect process by <br /> adding redeemed reward code to<br /> the tablet in
+                                        front of the cashier</p>
+                                </div>
                             </div>
                         </div>
                     </div>

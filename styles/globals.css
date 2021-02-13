@@ -1428,10 +1428,6 @@ span.imgicon.twitter {
   grid-gap: 0;
   background: #202331;
 }
-.feature-section .container {
-  width: 100%;
-  padding: 0;
-}
 .feature-main-section {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -1847,10 +1843,6 @@ span.imgicon.twitter {
 .testimonial-section-ar .testimonial-section-holder::before {
   right: -moz-calc(100% - 430px);
   right: calc(100% - 430px);
-}
-.testimonial-section .container {
-  padding: 0;
-  width: 100%;
 }
 [class*="testimonial-section-"] {
   position: relative;
@@ -2757,6 +2749,12 @@ span.imgicon.twitter {
   font-weight: 400;
   color: #7c8087;
 }
+.faq-item .faq-description a {
+  color: #4848f7;
+}
+.faq-item .faq-description a:hover {
+  color: #1b1ba5;
+}
 #error-404 .header-section {
   background: rgba(29, 41, 63, 0.09);
   border: none;
@@ -3598,10 +3596,6 @@ span.imgicon.twitter {
     grid-template-rows: auto 110px auto;
     padding-bottom: 80px;
   }
-  .feature-section .container {
-    width: 100%;
-    padding: 0 100px;
-  }
   .feature-section > div {
     position: relative;
     z-index: 1;
@@ -3637,8 +3631,9 @@ span.imgicon.twitter {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-area: 2/1 / span 2 / span 1;
-    width: calc(var(--cont) - 30px);
+    width: 100%;
     margin: auto;
+    margin-top: -110px;
     padding: 60px 50px;
     -webkit-box-shadow: 0 20px 84px rgba(32, 35, 49, 0.05);
     box-shadow: 0 20px 84px rgba(32, 35, 49, 0.05);
@@ -3829,10 +3824,6 @@ span.imgicon.twitter {
   }
   .testimonial-section {
     background: #fff;
-  }
-  .testimonial-section .container {
-    padding: 0 15px;
-    width: var(--cont);
   }
   .testimonial-section-holder {
     display: -ms-grid;
