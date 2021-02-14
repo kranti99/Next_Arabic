@@ -163,13 +163,13 @@ function contact_us() {
                                 <div class="contact-form-item">
                                     <form class="contact-form-holder" action=""  onSubmit={handleSubmit(postData)}>
                                         <div class="form-group"><input class="form-control" type="text" name="fullname" placeholder="الاسم كاملاً"
-                                            ref={register}/></div>
+                                            ref={register} required/></div>
                                         <div class="form-group"><input class="form-control" type="email" name="email"
-                                                placeholder="البريد الالكتروني" ref={register}/></div>
+                                                placeholder="البريد الالكتروني" ref={register} required/></div>
                                         <div class="form-group col2"><input class="form-control" type="text" name="phone" 
-                                                placeholder="رقم الجوال" ref={register}/></div>
+                                                placeholder="رقم الجوال" ref={register} required/></div>
                                         <div class="form-group col2"><textarea class="form-control" rows="7"
-                                                placeholder="تفاصيل الرسالة" name="message" ref={register}></textarea></div>
+                                                placeholder="تفاصيل الرسالة" name="message" ref={register} required></textarea></div>
                                         <div class="form-group col2 btn-holder"><button class="btn orange" type="submit">أرسل
                                                 الرسالة</button></div>
                                     </form>
