@@ -12,6 +12,7 @@ import { useForm } from 'react-hook-form';
 const postData = async (data) => {
     
     try {
+        document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
         await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
             method: 'post',
             mode: 'no-cors',
@@ -22,6 +23,7 @@ const postData = async (data) => {
             body: JSON.stringify(data)
         });
     } catch(e){
+        document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
         console.log(e)
     }   
 }
@@ -161,14 +163,14 @@ function Contact() {
                                 <div class="contact-form-item">
                                     <form class="contact-form-holder" action="" onSubmit={handleSubmit(postData)}>
                                         <div class="form-group"><input class="form-control" type="text" name="fullname" placeholder="Full Name"
-                                                ref={register} /></div>
+                                                ref={register} required/></div>
                                         <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"
-                                            ref={register}/></div>
+                                            ref={register} required/></div>
                                         <div class="form-group col2"><input class="form-control" type="number" name="phone" placeholder="Mobile No"
-                                                ref={register}/></div>
+                                                ref={register} required/></div>
                                         <div class="form-group col2"><textarea class="form-control" rows="7"
                                                 name="message" placeholder="Message Details"
-                                                 ref={register}></textarea></div>
+                                                 ref={register} required></textarea></div>
                                         <div class="form-group col2 btn-holder"><button class="btn orange" type="submit">Send
                                                 Now</button></div>
                                     </form>
