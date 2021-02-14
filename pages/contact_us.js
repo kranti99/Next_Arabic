@@ -20,7 +20,7 @@ const postData = async (data) => {
                 'Accept': 'application/json',
                 'Content-type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: data
         });
     } catch(e){
         document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
