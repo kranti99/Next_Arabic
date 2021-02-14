@@ -159,6 +159,7 @@ function contact_us() {
                                     <div class="description">
                                         <p class="colorange">فريقنا جاهز للاجابة عن استفساراتكم</p>
                                     </div>
+                                    <div class="successMsg"></div>
                                 </div>
                                 <div class="contact-form-item">
                                     <form class="contact-form-holder" action=""  onSubmit={handleSubmit(postData)}>

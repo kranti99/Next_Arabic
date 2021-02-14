@@ -159,6 +159,7 @@ function Contact() {
                                     <div class="description">
                                         <p class="colorange">Ready to answer your questions</p>
                                     </div>
+                                    <div class="successMsg"></div>
                                 </div>
                                 <div class="contact-form-item">
                                     <form class="contact-form-holder" action="" onSubmit={handleSubmit(postData)}>
