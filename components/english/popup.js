@@ -1,35 +1,33 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useForm } from 'react-hook-form';
+// import { fetch } from 'isomorphic-fetch';
 
 
 
 const postData = async (data) => {
     try {
-        await fetch('https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a', {
+        await fetch('https://development.bonat.io/website/application', {
             method: 'post',
             mode: 'no-cors',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
-            data: {},
             body: JSON.stringify(data)
-        }).then(
-            (response) => {
-              var contentType = response.headers.get('content-type')
-              console.warn(contentType)
-                return response.json()
-              }
-              ).catch((err) => {
-                console.log(err)
-              })
+        });
         document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
     } catch(e){
         console.log(e);
         document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
     }
+   
 }
+
+
+
+
+
 const Popup = (props) => {
 
   const {
