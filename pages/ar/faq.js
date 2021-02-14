@@ -15,7 +15,7 @@ import { useForm } from 'react-hook-form';
 const onSubmit = async (data) => {
     try {
         document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
-        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+        await fetch('https://development.bonat.io/website/application', {
             method: 'post',
             mode: 'no-cors',
             headers: {

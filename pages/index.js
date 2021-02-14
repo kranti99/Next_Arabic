@@ -18,7 +18,7 @@ import { useForm } from 'react-hook-form';
 const onSubmit = async (data) => {
     try {
         document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
-        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+        await fetch('https://development.bonat.io/website/application', {
             method: 'post',
             mode: 'no-cors',
             headers: {
@@ -493,7 +493,7 @@ export default function Home() {
             <div class="customer-box">
                 <div class="customer-title-box">
                     <div class="title">
-                        <h3>What's in it to Your Custoemrs?</h3>
+                        <h3>What's in it to Your Customers?</h3>
                     </div>
                     <div class="description">
                         <p class="colorange">A special experience that will enhance their loyalty</p>

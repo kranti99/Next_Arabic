@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 const postData = async (data) => {
     try {
         document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
-        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+        await fetch('https://development.bonat.io/website/application', {
             method: 'post',
             mode: 'no-cors',
             headers: {
@@ -16,6 +16,7 @@ const postData = async (data) => {
             },
             body: JSON.stringify(data)
         });
+        console.log('success')
     } catch(e){
         document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
         console.log(e)
