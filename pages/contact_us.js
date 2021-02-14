@@ -5,10 +5,30 @@ import FooterMenu from '../components/english/nav-footer'
 import Link from 'next/link'
 import Simplemap from '../components/map'
 import Popup from '../components/english/popup'
+import { useForm } from 'react-hook-form';
 
-function contact_us() {
+
+
+const postData = async (data) => {
+    
+    try {
+        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+            method: 'post',
+            mode: 'no-cors',
+            headers: {
+                'Accept': 'application/json',
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+    } catch(e){
+        console.log(e)
+    }   
+}
+function Contact() {
+    const {register, handleSubmit} = useForm();
+    
     return <div>
-
          {/* <!-- HEADER SECTION STARTS--> */}
     <section class="header-section">
         <div class="container">
@@ -139,16 +159,16 @@ function contact_us() {
                                     </div>
                                 </div>
                                 <div class="contact-form-item">
-                                    <form class="contact-form-holder" action="">
-                                        <div class="form-group"><input class="form-control" type="text" placeholder="Full Name"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='Full Name'" /></div>
-                                        <div class="form-group"><input class="form-control" type="email" placeholder="Email"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='Email'" /></div>
-                                        <div class="form-group col2"><input class="form-control" type="text" placeholder="Mobile No"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='Mobile No'" /></div>
+                                    <form class="contact-form-holder" action="" onSubmit={handleSubmit(postData)}>
+                                        <div class="form-group"><input class="form-control" type="text" name="fullname" placeholder="Full Name"
+                                                ref={register} /></div>
+                                        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"
+                                            ref={register}/></div>
+                                        <div class="form-group col2"><input class="form-control" type="number" name="phone" placeholder="Mobile No"
+                                                ref={register}/></div>
                                         <div class="form-group col2"><textarea class="form-control" rows="7"
-                                                placeholder="Message Details" onfocus="this.placeholder=''"
-                                                onblur="this.placeholder='Message Details'"></textarea></div>
+                                                name="message" placeholder="Message Details"
+                                                 ref={register}></textarea></div>
                                         <div class="form-group col2 btn-holder"><button class="btn orange" type="submit">Send
                                                 Now</button></div>
                                     </form>
@@ -216,4 +236,5 @@ function contact_us() {
           {/* <!-- FOOTER SECTION ENDS--> */}
         </div>
 }
-export default contact_us
+
+export default Contact

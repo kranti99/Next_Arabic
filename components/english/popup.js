@@ -1,8 +1,26 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
 
+
+
+const postData = async (data) => {
+    try {
+        document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
+        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+            method: 'post',
+            mode: 'no-cors',
+            headers: {
+                'Accept': 'application/json',
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+    } catch(e){
+        document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
+        console.log(e)
+    }
+}
 const Popup = (props) => {
 
   const {
@@ -13,18 +31,6 @@ const Popup = (props) => {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
-  const onSubmit =  (data)  => {
-      axios
-      .post('https://www.postman.com/collections/c7d197a4f68c3690e2b1', JSON.stringify(data))
-      .then(response => {
-            alert(response);
-            document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
-
-        })
-      .catch(error=> {
-            document.querySelector('.successMsg').textContent  = 'eThank you, Bonat will contact you back as soon as possible';
-        })
-  }
 
   return (
     <div>
@@ -47,7 +53,7 @@ const Popup = (props) => {
                   </div>
                   <div class="popup-section-formbox">
                       <div class="successMsg"></div>
-                      <form onSubmit={handleSubmit(onSubmit)}>
+                      <form onSubmit={handleSubmit(postData)}>
                           <div class="popup-section-form">
                             <div class="form-group">
                                 <input class="form-control pop" type="text" placeholder="Full Name *" name="fullname" ref={register} required/>

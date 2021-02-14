@@ -1,8 +1,25 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
 
+
+const onSubmit = async (data) => {
+    try {
+        document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
+        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+            method: 'post',
+            mode: 'no-cors',
+            headers: {
+                'Accept': 'application/json',
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+    } catch(e){
+        document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
+        console.log(e)
+    }
+}
 const Popup = (props) => {
 
   const {
@@ -14,20 +31,11 @@ const Popup = (props) => {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
-  const onSubmit =  (data)  => {
-      document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
 
-      axios
-      .post('https://www.postman.com/collections/c7d197a4f68c3690e2b1', JSON.stringify(data))
-      .then(response => {
-      })
-      .catch(error=> {
-      })
-  }
 
   return (
     <div>
-      <Button color="btn small orange" onClick={toggle} title="Request a Demo">Request a Demo</Button>
+      <Button color="btn small orange" onClick={toggle} title="Request a Demo">اطلب التجربة</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>
         </ModalHeader>

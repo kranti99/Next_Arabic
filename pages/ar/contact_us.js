@@ -5,8 +5,31 @@ import FooterMenu from '../../components/arabic/nav-footer'
 import Link from 'next/link'
 import Simplemap from '../../components/map'
 import Popup from '../../components/arabic/popup'
+import { useForm } from 'react-hook-form';
 
+
+
+const postData = async (data) => {
+
+    try {
+        document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
+        await fetch('https://www.postman.com/collections/c7d197a4f68c3690e2b1', {
+            method: 'post',
+            mode: 'no-cors',
+            headers: {
+                'Accept': 'application/json',
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+    } catch(e){
+        document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
+        console.log(e)
+    }
+}
 function contact_us() {
+    const {register, handleSubmit} = useForm();
+
     return <div>
 
          {/* <!-- HEADER SECTION STARTS--> */}
@@ -138,18 +161,15 @@ function contact_us() {
                                     </div>
                                 </div>
                                 <div class="contact-form-item">
-                                    <form class="contact-form-holder" action="">
-                                        <div class="form-group"><input class="form-control" type="text" placeholder="الاسم كاملاً"
-                                                onfocus="this.placeholder=''" onblur="this.placeholder='الاسم كاملاً'" /></div>
-                                        <div class="form-group"><input class="form-control" type="email"
-                                                placeholder="البريد الالكتروني" onfocus="this.placeholder=''"
-                                                onblur="this.placeholder='البريد الالكتروني'" /></div>
-                                        <div class="form-group col2"><input class="form-control" type="text"
-                                                placeholder="رقم الجوال" onfocus="this.placeholder=''"
-                                                onblur="this.placeholder='رقم الجوال'" /></div>
+                                    <form class="contact-form-holder" action=""  onSubmit={handleSubmit(postData)}>
+                                        <div class="form-group"><input class="form-control" type="text" name="fullname" placeholder="الاسم كاملاً"
+                                            ref={register}/></div>
+                                        <div class="form-group"><input class="form-control" type="email" name="email"
+                                                placeholder="البريد الالكتروني" ref={register}/></div>
+                                        <div class="form-group col2"><input class="form-control" type="text" name="phone" 
+                                                placeholder="رقم الجوال" ref={register}/></div>
                                         <div class="form-group col2"><textarea class="form-control" rows="7"
-                                                placeholder="تفاصيل الرسالة" onfocus="this.placeholder=''"
-                                                onblur="this.placeholder='تفاصيل الرسالة'"></textarea></div>
+                                                placeholder="تفاصيل الرسالة" name="message" ref={register}></textarea></div>
                                         <div class="form-group col2 btn-holder"><button class="btn orange" type="submit">أرسل
                                                 الرسالة</button></div>
                                     </form>
