@@ -1,26 +1,27 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useForm } from 'react-hook-form';
+import fetch from "isomorphic-fetch";
 
 
-const onSubmit = async (data) => {
-    try {
-        await fetch('https://development.bonat.io/website/application', {
-            method: 'post',
-            mode: 'no-cors',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        });
-        document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
+// const onSubmit = async (data) => {
+//     try {
+//         await fetch('https://development.bonat.io/website/application', {
+//             method: 'post',
+//             mode: 'no-cors',
+//             headers: {
+//                 'Accept': 'application/json',
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify(data)
+//         });
+//         document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
 
-    } catch(e){
-        document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
-        console.log(e)
-    }
-}
+//     } catch(e){
+//         document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
+//         console.log(e)
+//     }
+// }
 const Popup = (props) => {
 
   const {
@@ -33,6 +34,28 @@ const Popup = (props) => {
 
   const toggle = () => setModal(!modal);
 
+  const [res, setRes] = React.useState({ success: false, error: null });
+  const postData = async (data) => {
+    // e.preventDefault();
+    try {
+      await fetch("https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a", {
+        method: "POST",
+        
+
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({data})
+      });
+      setRes({ error: null, success: true });
+      document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';
+
+    } catch (e) {
+      setRes({ error: true, success: false });
+      console.log(e);
+      document.querySelector('.successMsg').textContent  = 'Message Could not be sent. Please try again later';
+    }
+  };
 
   return (
     <div>

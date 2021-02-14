@@ -8,12 +8,13 @@ import React, {useState} from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import { useForm } from 'react-hook-form';
+import fetch from "isomorphic-fetch";
 
 const onSubmit = async (data) => {
     try {
         await fetch('https://development.bonat.io/website/application', {
             method: 'post',
-            mode: 'no-cors',
+            // mode: 'no-cors',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',

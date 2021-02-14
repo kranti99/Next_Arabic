@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Simplemap from '../../components/map'
 import Popup from '../../components/arabic/popup'
 import { useForm } from 'react-hook-form';
+import fetch from "isomorphic-fetch";
 
 
 
@@ -14,7 +15,7 @@ const postData = async (data) => {
     try {
         await fetch('https://development.bonat.io/website/contact-us', {
             method: 'post',
-            mode: 'no-cors',
+            // mode: 'no-cors',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
