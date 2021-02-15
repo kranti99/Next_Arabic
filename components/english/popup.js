@@ -41,6 +41,7 @@ const Popup = (props) => {
   const toggle = () => setModal(!modal);
   const [res, setRes] = React.useState({ success: false, error: null });
   const postData = async (data) => {
+    alert( JSON.stringify(data) )
     // e.preventDefault();
     try {
       await fetch("https://development.bonat.io/website/application", {
@@ -50,7 +51,7 @@ const Popup = (props) => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({data})
+        body: JSON.stringify(data)
       });
       setRes({ error: null, success: true });
       document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';

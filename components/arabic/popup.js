@@ -43,7 +43,7 @@ const Popup = (props) => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({data})
+        body: JSON.stringify(data)
       });
       setRes({ error: null, success: true });
       document.querySelector('.successMsg').textContent  = 'Thank you, Bonat will contact you back as soon as possible';

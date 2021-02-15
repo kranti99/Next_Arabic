@@ -12,6 +12,7 @@ import fetch from "isomorphic-fetch";
 
 const onSubmit = async (data) => {
     try {
+
         await fetch('https://development.bonat.io/website/application', {
             method: 'post',
             mode: 'no-cors',
