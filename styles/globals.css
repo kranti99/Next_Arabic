@@ -3365,6 +3365,12 @@ span.imgicon.twitter {
     grid-gap: 60px;
     padding: 65px 0;
   }
+
+  #partner_ar .tech-part-box {
+    -ms-grid-columns: 1fr 330px;
+    grid-template-columns: 1fr 330px;
+    grid-gap: 30px;
+  }
   .tech-part-title {
     place-items: flex-start;
     text-align: left;

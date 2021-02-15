@@ -35,7 +35,7 @@ const Popup = (props) => {
   const toggle = () => setModal(!modal);
 
   const [res, setRes] = React.useState({ success: false, error: null });
-  const postData = async (data) => {
+  const onSubmit = async (data) => {
     // e.preventDefault();
     try {
       await fetch("https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a", {

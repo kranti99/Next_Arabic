@@ -244,6 +244,9 @@ export default function Home() {
         <section class="technology-partner" id="partner_ar">
             <div class="container">
                 <div class="tech-part-box">
+                    <div class="tech-part-slider-box">
+                       <Partner />
+                    </div>
                     <div class="tech-part-title" style={{direction:"rtl"}}>
                         <div class="title">
                             <h1 class="fw700">فخورون بثقة شركاؤنا</h1>
@@ -252,9 +255,7 @@ export default function Home() {
                             <p>انظمة سهلة الربط لبرنامج ولاء مؤتمت بالكامل</p>
                         </div>
                     </div>
-                    <div class="tech-part-slider-box">
-                       <Partner />
-                    </div>
+                   
                 </div>
             </div>
         {/* <!-- TECHNOLOGY PARTNERS SECTION ENDS--> */}
