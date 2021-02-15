@@ -38,10 +38,8 @@ const Popup = (props) => {
   const onSubmit = async (data) => {
     // e.preventDefault();
     try {
-      await fetch("https://webhook.site/fe14a0bc-06af-4ff0-80a8-454498d2c69a", {
+      await fetch("https://development.bonat.io/website/application", {
         method: "POST",
-        
-
         headers: {
           "Content-Type": "application/json"
         },

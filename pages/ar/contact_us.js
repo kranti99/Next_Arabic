@@ -14,10 +14,10 @@ const postData = async (data) => {
 
     try {
         await fetch('https://development.bonat.io/website/contact-us', {
-            method: 'post',
-            // mode: 'no-cors',
+            method: 'POST',
+            mode: 'no-cors',
             headers: {
-                'Accept': 'application/json',
+                // 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data)

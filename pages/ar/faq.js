@@ -15,10 +15,10 @@ import { useForm } from 'react-hook-form';
 const onSubmit = async (data) => {
     try {
         await fetch('https://development.bonat.io/website/application', {
-            method: 'post',
+            method: 'POST',
             mode: 'no-cors',
             headers: {
-                'Accept': 'application/json',
+                // 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data)

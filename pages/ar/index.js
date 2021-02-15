@@ -195,8 +195,8 @@ export default function Home() {
                 </div>
                 <div class="mobile-menu-lang">
                     <ul>
-                        <li><a href="#" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">English</span></a></li>
+                    <li><Link href="/"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">English</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="mobile-menu-list">

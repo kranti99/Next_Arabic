@@ -14,10 +14,9 @@ const postData = async (data) => {
     
     try {
         await fetch('https://development.bonat.io/website/contact-us', {
-            method: 'post',
-            // mode: 'no-cors',
+            method: 'POST',
+            mode: 'no-cors',
             headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data)
@@ -76,8 +75,8 @@ function Contact() {
                 </div>
                 <div class="mobile-menu-lang">
                     <ul>
-                        <li><a href="#" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">English</span></a></li>
+                    <li><Link href="/ar/contact_us"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">العربيــة</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="mobile-menu-list">

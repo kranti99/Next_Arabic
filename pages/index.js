@@ -19,10 +19,10 @@ import fetch from "isomorphic-fetch";
 const onSubmit = async (data) => {
     try {
         await fetch('https://development.bonat.io/website/application', {
-            method: 'post',
-            // mode: 'no-cors',
+            method: 'POSt',
+            mode: 'no-cors',
             headers: {
-                'Accept': 'application/json',
+                // 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data)
@@ -200,8 +200,8 @@ export default function Home() {
                 </div>
                 <div class="mobile-menu-lang">
                     <ul>
-                        <li><a href="#" title="title"><span class="imgicon messagebox"></span><span
-                                    class="text">English</span></a></li>
+                    <li><Link href="/ar"><a title="title"><span class="imgicon messagebox"></span><span
+                                        class="text">العربيــة</span></a></Link></li>
                     </ul>
                 </div>
                 <div class="mobile-menu-list">
